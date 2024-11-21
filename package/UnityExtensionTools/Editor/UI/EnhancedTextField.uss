@@ -1,0 +1,12 @@
+.moonlander-enhanced-text-field__placeholder-label {
+    opacity: 0.5;
+    position: absolute;
+}
+
+.moonlander-enhanced-text-field:focus .moonlander-enhanced-text-field__placeholder-label {
+    display: none;
+}
+
+.moonlander-enhanced-text-field--empty .moonlander-enhanced-text-field__placeholder-label {
+    display: none;
+}

@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/MoonlanderSetupWindow.uss?fileID=7433441132597879392&amp;guid=33927d62e0825ef4cafc7fd481abebef&amp;type=3#MoonlanderSetupWindow" />
+    <ui:VisualElement class="moonlander-logo" style="margin-top: 10px;" />
+    <ui:VisualElement class="setup__step-container" />
+    <ui:RadioButtonGroup value="0" choices="," class="setup__step-indicator" />
+</ui:UXML>

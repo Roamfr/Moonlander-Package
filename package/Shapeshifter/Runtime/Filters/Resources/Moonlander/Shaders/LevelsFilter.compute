@@ -1,0 +1,50 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Result;
+
+float InputLow;
+float InputMid;
+float InputHigh;
+
+float OutputLow;
+float OutputHigh;
+
+float inverse_lerp(in float a, in float b, in float value)
+{
+    return a != b ? saturate((value - a) / (b - a)) : 0.0f;
+}
+
+float SingleChannelLevels(in float channel)
+{
+    float normalizedValue = inverse_lerp(InputLow, InputHigh, channel);
+                
+    // Adjust the mid/gamma value.
+    float invertedMid = 1 - InputMid;
+                
+    // When the mid is at 0 or 1 exactly it will result in the output of 1 regardless of the value parameter.
+    // So we simple clamp the value between 0.000001 and 0.999999.
+    float mid = clamp(invertedMid, 0 + 1e-6f, 1 - 1e-6f);
+                
+    // Truth be told, I don't understand this. If you do, please add a comment explaining it, thanks.
+    normalizedValue = pow(normalizedValue, log(0.5f) /log(mid));
+                
+    normalizedValue = lerp(OutputLow, OutputHigh, normalizedValue);
+                
+    return saturate(normalizedValue);
+}
+
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    float4 color = Result[id.xy];
+    
+    Result[id.xy] = float4(SingleChannelLevels(color.x), SingleChannelLevels(color.y), SingleChannelLevels(color.z), color.w);
+}
+
+
+
+

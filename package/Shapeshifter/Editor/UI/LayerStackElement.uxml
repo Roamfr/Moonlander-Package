@@ -1,0 +1,48 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/LayerStackElement.uss?fileID=7433441132597879392&amp;guid=9d5b029181e6453f88a4c88daaf30486&amp;type=3#LayerStackElement" />
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/TabRadioGroups.uss?fileID=7433441132597879392&amp;guid=a16def3c60524d0bbb5858cf39633d3c&amp;type=3#TabRadioGroups" />
+    <ui:VisualElement class="moonlander-layer-stack__header-container">
+        <ui:Button tooltip="Add Group layer" class="moonlander-layer-stack__add-button moonlander-layer-stack__add-group ">
+            <ui:VisualElement class="moonlander-layer-stack__add-button-icon" />
+        </ui:Button>
+        <ui:Button tooltip="Add Preset layer" class="moonlander-layer-stack__add-button moonlander-layer-stack__add-preset">
+            <ui:VisualElement class="moonlander-layer-stack__add-button-icon" />
+        </ui:Button>
+        <ui:Button tooltip="Add Data Registry layer" class="moonlander-layer-stack__add-button moonlander-layer-stack__add-registry">
+            <ui:VisualElement class="moonlander-layer-stack__add-button-icon" />
+        </ui:Button>
+        <ui:Button tooltip="Add other layers" class="moonlander-layer-stack__add-button moonlander-layer-stack__add-other">
+            <ui:VisualElement class="moonlander-layer-stack__add-button-icon" />
+            <ui:VisualElement class="moonlander-arrow-icon" />
+        </ui:Button>
+        <ui:Button tooltip="Delete selected layer" class="moonlander-layer-stack__add-button moonlander-layer-stack__delete-button">
+            <ui:VisualElement class="moonlander-layer-stack__add-button-icon" />
+        </ui:Button>
+        <ui:VisualElement class="moonlander-layer-stack__spacer"/>
+        <ui:Button tooltip="Load preset" class="moonlander-layer-stack__add-button moonlander-layer-stack__load-button">
+            <ui:VisualElement class="moonlander-layer-stack__add-button-icon" />
+        </ui:Button>
+        <ui:Button tooltip="Save as new preset asset" class="moonlander-layer-stack__add-button moonlander-layer-stack__save-button">
+            <ui:VisualElement class="moonlander-layer-stack__add-button-icon" />
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:TwoPaneSplitView fixed-pane-index="0" fixed-pane-initial-dimension="150" orientation="Vertical" class="moonlander-layer-stack__split">
+        <ui:VisualElement class="moonlander-layer-stack__layers-container">
+            <ui:TreeView view-data-key="unity-tree-view" focusable="true" fixed-item-height="24" class="moonlander-layer-stack__layers" />
+            <ui:VisualElement class="moonlander-layer-stack__layers-space" />
+            <ui:Label text="Add a layer using one of the buttons above" class="moonlander-layer-stack__layers-empty-prompt" />
+        </ui:VisualElement>
+        <ui:TwoPaneSplitView fixed-pane-index="1" fixed-pane-initial-dimension="100" orientation="Vertical" class="moonlander-layer-stack__preview-split">
+            <ui:VisualElement class="moonlander-layer-stack__layer-info">
+                <ui:VisualElement class="moonlander-layer-stack__layer-visibility">
+                    <ui:Slider label="Opacity" show-input-field="true" low-value="0" high-value="1" value="1" class="moonlander-layer-stack__opacity" />
+                    <ui:EnumField type="Moonlander.Core.Layers.BlendMode, Moonlander.Shapeshifter" class="moonlander-layer-stack__blend-mode" />
+                </ui:VisualElement>
+                <ui:RadioButtonGroup value="0" choices="Properties,Filters" class="moonlander-tabs moonlander-layer-stack__tabs" />
+                <ui:ScrollView class="moonlander-layer-stack__tab-content" />
+                <ui:Label text="Select a layer from the panel above" class="moonlander-layer-stack__select-layer-prompt" />
+            </ui:VisualElement>
+            <Moonlander.Core.Editor.LayerStackPreview class="moonlander-layer-stack__preview" />
+        </ui:TwoPaneSplitView>
+    </ui:TwoPaneSplitView>
+</ui:UXML>

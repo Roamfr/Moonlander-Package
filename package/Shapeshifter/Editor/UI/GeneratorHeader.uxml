@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/GeneratorHeader.uss?fileID=7433441132597879392&amp;guid=275d5c86564bead4ea6a17e54b927db3&amp;type=3#GeneratorHeader" />
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/TabRadioGroups.uss?fileID=7433441132597879392&amp;guid=a16def3c60524d0bbb5858cf39633d3c&amp;type=3#TabRadioGroups" />
+    <ui:VisualElement class="generator-header">
+        <ui:VisualElement name="VisualElement" class="generator-header__top-container">
+            <ui:VisualElement class="generator-header__icon" />
+            <ui:VisualElement class="generator-header__basic-data">
+                <ui:VisualElement class="generator-header__top-row">
+                    <ui:Label tabindex="-1" text="Generator" display-tooltip-when-elided="true" class="generator-header__type-label" />
+                    <ui:VisualElement class="generator-header__save-button" tooltip="Create a template from the generator" />
+                </ui:VisualElement>
+                <ui:TextField picking-mode="Ignore" value="Generator" class="generator-header__name-field" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:RadioButtonGroup value="-1" choices="Properties,Dependencies,Cost" class="generator-header__tabs moonlander-tabs" />
+    </ui:VisualElement>
+</ui:UXML>

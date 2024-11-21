@@ -1,0 +1,14 @@
+.moonlander-header__header-container {
+    height: 21px;
+    justify-content: center;
+    padding-left: 5px;
+    background-color: rgba(50, 50, 50, 255);
+    border-top-width: 1px;
+    border-top-color: rgba(31, 31, 31, 255);
+    -unity-font-style: bold;
+}
+
+.moonlander-header__content {
+    padding-top: 2px;
+    padding-left: 15px;
+}

@@ -1,0 +1,14 @@
+.moonlander-layer-stack-field__input {
+    flex-direction: row;
+}
+
+.moonlander-layer-stack-field__count-label {
+    flex-grow: 1;
+    padding-left: 2px;
+    -unity-text-align: middle-left;
+}
+
+.moonlander-layer-stack-field__edit-button {
+    margin-left: 0px;
+    margin-right: 0px;
+}

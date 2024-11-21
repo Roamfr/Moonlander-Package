@@ -1,0 +1,21 @@
+.moonlander-header-foldout__header-container {
+    flex-direction: row;
+}
+
+.moonlander-header-foldout__header-content {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.moonlander-header-foldout__toggle {
+    margin-right: 0px;
+}
+
+.moonlander-header-foldout__header-content .moonlander-editable-label {
+    max-width: 200px;
+    flex-grow: 1;
+}
+
+.moonlander-filter {
+    overflow: hidden;
+}

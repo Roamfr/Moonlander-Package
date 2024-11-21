@@ -1,0 +1,30 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel Convert
+#pragma kernel CalculateAverageColor
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Heightmap;
+
+Texture2D<float4> TerrainLayer;
+SamplerState samplerTerrainLayer;
+RWStructuredBuffer<float4> AverageColor;
+
+[numthreads(8,8,1)]
+void Convert (uint3 id : SV_DispatchThreadID)
+{
+    // We do this because the Unity terrain is actually unsigned sort of,
+    // and anything above 0.5 switches to -0.5 when reading from a height map.
+    Heightmap[id.xy] = Heightmap[id.xy] * 0.5;
+}
+
+[numthreads(1,1,1)]
+void CalculateAverageColor (uint3 id : SV_DispatchThreadID)
+{
+    int width;
+    int height;
+    int numberOfLevels;
+    TerrainLayer.GetDimensions(0, width, height, numberOfLevels);
+    
+    AverageColor[0] = TerrainLayer.Load(int3(0, 0, max(numberOfLevels -  1, 0)));
+}

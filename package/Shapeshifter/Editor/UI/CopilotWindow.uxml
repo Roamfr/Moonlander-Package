@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" moonlander="Moonlander.Extensions.Editor" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/CopilotWindow.uss?fileID=7433441132597879392&amp;guid=f43a4a5a09a33de43869175514fd7d96&amp;type=3#CopilotWindow" />
+    <uie:Toolbar>
+        <uie:ToolbarButton text="New Chat" class="new-conversation-button" />
+        <uie:ToolbarToggle view-data-key="conversation-toggle" value="true" class="conversations-pane-toggle">
+            <ui:VisualElement class="conversations-pane-toggle__icon" />
+        </uie:ToolbarToggle>
+        <ui:VisualElement style="flex-grow:1"/>
+        <uie:ToolbarMenu class="chat-type-menu"/>
+    </uie:Toolbar>
+    <ui:TwoPaneSplitView fixed-pane-initial-dimension="200" class="content-split-view">
+        <ui:VisualElement>
+            <ui:ListView fixed-item-height="24" class="conversations-list" />
+        </ui:VisualElement>
+        <ui:VisualElement>
+            
+        </ui:VisualElement>
+    </ui:TwoPaneSplitView>
+</ui:UXML>

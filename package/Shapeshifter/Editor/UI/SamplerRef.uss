@@ -1,0 +1,41 @@
+.moonlander-sampler-ref__field {
+    flex-direction: row;
+    flex-grow: 1;
+    padding: 2px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: var(--unity-colors-input_field-border);
+    background-color: var(--unity-colors-input_field-background);
+}
+
+.moonlander-sampler-ref__field:hover {
+    border-color: var(--unity-colors-input_field-border-hover)
+}
+
+.moonlander-sampler-ref__name {
+    flex-grow: 1;
+}
+
+.moonlander-sampler-ref .unity-base-field__input {
+    flex-direction: row;
+}
+
+.moonlander-sampler-ref__local-sampler {
+    display: none;
+}
+
+.moonlander-sampler-ref--local .moonlander-sampler-ref__local-sampler {
+    display: flex;
+}
+
+.moonlander-sampler-ref__type {
+    display: none;
+    flex-grow: 1;
+}
+
+.moonlander-sampler-ref--local .moonlander-sampler-ref__field {
+    display: none;
+}
+.moonlander-sampler-ref--local .moonlander-sampler-ref__type {
+    display: flex;
+}

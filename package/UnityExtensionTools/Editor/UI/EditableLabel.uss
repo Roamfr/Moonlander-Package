@@ -1,0 +1,13 @@
+.moonlander-editable-label {
+    margin: 1px 3px 1px 1px;
+}
+
+.moonlander-editable-label__label {
+    padding: 2px 3px 1px 3px;
+    color: var(--unity-colors-label-text);
+    overflow: hidden;
+}
+
+.moonlander-editable-label__text-field {
+    margin: 0;
+}

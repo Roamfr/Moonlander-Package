@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/GeneratorDependencies.uss?fileID=7433441132597879392&amp;guid=02f77050a86b4ea1b92f405bcd4a8629&amp;type=3#GeneratorDependencies" />
+    <ui:VisualElement name="input-header" class="dependencies-header" >
+        <ui:VisualElement class="dependencies-header__icon" />
+        <ui:Label text="Input" class="dependencies-header__title" />
+    </ui:VisualElement>
+    <ui:MultiColumnListView name="input-dependencies" fixed-item-height="24" show-border="true">
+        <ui:Columns>
+            <ui:Column name="name" title="Name" width="120" stretchable="true" optional="false" />
+            <ui:Column name="type" title="Type" width="200" stretchable="true" optional="false" />
+            <ui:Column name="count" title="Count" width="60" stretchable="false" optional="false" />
+            <ui:Column name="status" title="Status" width="60" resizable="false" optional="false" />
+        </ui:Columns>
+    </ui:MultiColumnListView>
+    <ui:VisualElement class="dependencies-spacer"/>
+    <ui:VisualElement name="output-header" class="dependencies-header">
+        <ui:VisualElement class="dependencies-header__icon" />
+        <ui:Label text="Output" class="dependencies-header__title" />
+    </ui:VisualElement>
+    <ui:MultiColumnListView name="output-dependencies" fixed-item-height="24" show-border="true">
+        <ui:Columns>
+            <ui:Column name="name" title="Name" width="120" stretchable="true" optional="false" />
+            <ui:Column name="type" title="Type" width="200" stretchable="true" optional="false" />
+            <ui:Column name="count" title="Count" width="60" stretchable="false" optional="false" />
+            <ui:Column name="status" title="Status" width="60" resizable="false" optional="false"/>
+        </ui:Columns>
+    </ui:MultiColumnListView>
+</ui:UXML>

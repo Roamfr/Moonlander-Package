@@ -1,0 +1,21 @@
+.moonlander-chip-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.moonlander-chip-group__input {
+    min-width: 5px;
+    height: 21px;
+    margin-left: 2px;
+}
+
+.moonlander-chip {
+    background-color: rgba(34, 34, 34, 255);
+    border-radius: 4px;
+    padding: 2px 4px;
+    margin: 2px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}

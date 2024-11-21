@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements"
+         xmlns:mle="Moonlander.Core.Editor" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/NamedPropertyElement.uss?fileID=7433441132597879392&amp;guid=129bc961be67c0b4a8c7a9e7f659a67f&amp;type=3#NamedPropertyElement" />
+    <ui:TextField picking-mode="Ignore" label="Name" name="name" binding-path="_name" class="moonlander-named-property__name-input" />
+    <ui:VisualElement class="moonlander-named-property__controls-spacer"/>
+    <mle:AnalyzeContentButton class="moonlander-named-property__analyze-button"/>
+</ui:UXML>

@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Overlays/MissingLicenseOverlay.uss?fileID=7433441132597879392&amp;guid=7e39ec7f7433b6e4bb872b09236e6f72&amp;type=3#MissingLicenseOverlay" />
+    <ui:VisualElement class="moonlander-missing-license">
+        <ui:VisualElement class="moonlander-missing-license__content">
+            <ui:VisualElement class="moonlander-missing-license__lock-icon" />
+            <ui:Label tabindex="-1" text="No active or valid license." parse-escape-sequences="true" display-tooltip-when-elided="true" class="moonlander-missing-license__prompt" />
+        </ui:VisualElement>
+        <ui:Button text="Open Licensing Window" parse-escape-sequences="true" display-tooltip-when-elided="true" class="moonlander-missing-license__open-window" />
+    </ui:VisualElement>
+</ui:UXML>

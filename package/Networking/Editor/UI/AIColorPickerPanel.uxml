@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Networking/Editor/UI/AIToolkit.uss?fileID=7433441132597879392&amp;guid=1a35c4884e5c2a44aba8af21584ea8f7&amp;type=3#AIToolkit" />
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Networking/Editor/UI/AIColorPalettePicker.uss?fileID=7433441132597879392&amp;guid=512dfaae629d94d48a9a00484779c75c&amp;type=3#AIColorPalettePicker" />
+    <ui:Label tabindex="-1" text="Describe the scenario or mood of the palette" display-tooltip-when-elided="true" class="ai-toolkit-field-label" />
+    <ui:TextField picking-mode="Ignore" multiline="true" class="ai-toolkit__prompt" />
+    <ui:VisualElement class="ai-toolkit-spacer" />
+    <ui:Label tabindex="-1" text="Number of colors" display-tooltip-when-elided="true" class="ai-toolkit-field-label" />
+    <ui:SliderInt picking-mode="Ignore" value="4" high-value="10" low-value="2" show-input-field="true" class="ai-color-picker__count" />
+    <ui:VisualElement class="ai-toolkit-spacer" />
+    <ui:Button text="Generate Palette" display-tooltip-when-elided="true" class="ai-toolkit__create" />
+    <ui:VisualElement class="ai-toolkit-spacer" />
+    <uie:Toolbar class="ai-toolkit__output-header">
+        <ui:Label text="Output" class="ai-toolkit__output-label"/>
+    </uie:Toolbar>
+    <ui:VisualElement class="ai-color-picker__output-container">
+        <ui:VisualElement class="ai-color-picker__output-colors"/>
+        <Moonlander.Extensions.Editor.Spinner class="ai-toolkit__loading-indicator"/>
+    </ui:VisualElement>
+</ui:UXML>

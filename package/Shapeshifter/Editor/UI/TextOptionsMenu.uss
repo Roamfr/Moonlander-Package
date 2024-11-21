@@ -1,0 +1,24 @@
+.moonlander-text-options-menu {
+    position: absolute;
+    min-height: 21px;
+    background-color: var(--unity-colors-input_field-background);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-color: var(--unity-colors-input_field-border);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.moonlander-text-options-menu__item {
+    height: 20px;
+    -unity-text-align: middle-left;
+    padding-left: 5px;
+}
+
+.moonlander-text-options-menu__item:hover
+{
+    background-color: rgba(127, 127, 127, 0.5);
+}

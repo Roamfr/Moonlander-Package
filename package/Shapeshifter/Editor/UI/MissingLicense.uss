@@ -1,0 +1,41 @@
+.moonlander-missing-license {
+    justify-content: center;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.moonlander-missing-license__prompt {
+    white-space: normal;
+    -unity-text-align: middle-center;
+    margin-bottom: 10px;
+    max-width: 500px;
+    margin-top: 5px;
+    font-size: 14px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.moonlander-missing-license__open-window {
+    height: 30px;
+    width: 200px;
+}
+
+.moonlander-missing-license__lock-icon {
+    width: 32px;
+    height: 32px;
+    background-image: resource('icons/overlays/locked.png');
+    flex-shrink: 0;
+}
+
+.moonlander-missing-license__logo {
+    align-self: center;
+    width: 80%;
+    height: 90px;
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/MoonlanderLogo.png?fileID=2800000&guid=53a1f5845af7c8e43ab8c2ab1d238304&type=3#MoonlanderLogo');
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.moonlander-missing-icense__content {
+    align-items: center;
+    margin-top: 25px;
+}

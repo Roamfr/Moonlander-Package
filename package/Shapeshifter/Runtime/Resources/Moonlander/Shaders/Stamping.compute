@@ -1,0 +1,94 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel ApplyEmptyStamp
+#pragma kernel ApplyStamp
+
+#include "Blending.hlsl"
+
+RWTexture2D<float4> CanvasTexture;
+SamplerState samplerCanvasTexture;
+blend_mode BlendMode = BLEND_MAX;
+float Opacity = 1;
+
+RWTexture2D<float4> Result;
+float2 CanvasTextureSize;
+float2 CanvasAreaSize;
+
+float2 Position;
+float Rotation;
+float3 Scale;
+
+Texture2D<float4> StampTexture;
+SamplerState samplerStampTexture;
+
+
+float2 RotateAround(float2 pos, float2 pivot, float angle)
+{
+    float radians = angle * 0.0174533; // Convert degrees to radians
+    float c = cos(radians);
+    float s = sin(radians);
+    return  float2
+    (
+        c * (pos.x - pivot.x) -
+        s * (pos.y - pivot.y) + pivot.x,
+           
+        s * (pos.x - pivot.x) +
+        c * (pos.y - pivot.y) + pivot.y
+   );
+}
+
+
+float GetScaleFactor(float scale)
+{
+    return 1 - scale + (scale * 0.5);
+}
+
+
+float4 SampleTexture(Texture2D<float4> stampTexture, SamplerState stampSampler, float2 worldPosition, float rotation, float3 scale, float2 uv)
+{
+    // Apply TRS transformations
+    
+    const float2 worldPositionUV = worldPosition / CanvasTextureSize; // The world position in UV space.
+    const float2 localPositionUV = (CanvasTextureSize - worldPosition) / CanvasTextureSize; // The position relative to the background texture in UV space.
+
+    float2 rotatedUV = RotateAround(uv, worldPositionUV, rotation);
+    float2 translatedUV = rotatedUV + localPositionUV;
+    translatedUV = translatedUV - float2(GetScaleFactor(scale.x), GetScaleFactor(scale.z)); // Change the uv so the sampling is centered on it.
+    
+    float2 scaledUV = translatedUV / scale.xz;
+    
+    float2 localUV = scaledUV;
+
+    if (localUV.x >= 0 && localUV.x <= 1 && localUV.y >= 0 && localUV.y <= 1)
+        return stampTexture.SampleLevel(stampSampler, localUV, 0);
+    else // Needs to be an 'else' otherwise the shader compiler throws warnings about the texture possibly being un-initialized.
+        return float4(0, 0, 0, 1);
+}
+
+
+// Replaces the canvas texture with the stamp texture or black.
+[numthreads(8,8,1)]
+void ApplyEmptyStamp (uint3 id : SV_DispatchThreadID)
+{
+    float2 uv = id.xy / CanvasTextureSize;
+    
+    CanvasTexture[id.xy] = SampleTexture(StampTexture, samplerStampTexture, Position, Rotation, Scale, uv);
+}
+
+// Blends the stamp texture with the canvas texture.
+[numthreads(8,8,1)]
+void ApplyStamp (uint3 id : SV_DispatchThreadID)
+{
+    float2 uv = id.xy / CanvasTextureSize;
+
+    const float4 stampColor = SampleTexture(StampTexture, samplerStampTexture, Position, Rotation, Scale, uv);
+    const float4 backgroundColor = CanvasTexture[id.xy];
+
+    float4 resultColor = blend(backgroundColor, stampColor, BlendMode, Opacity);
+    resultColor.a = 1;
+    
+    CanvasTexture[id.xy] = resultColor;
+}
+
+
+
+

@@ -1,0 +1,48 @@
+.moonlander-tag-chip {
+    flex-direction: row;
+}
+
+.content-inspector__preview-area {
+    margin-bottom: 5px;
+}
+
+.content-inspector__field-label {
+    margin-left: 2px;
+    margin-top: 5px;
+    flex-grow: 1;
+}
+
+.content-inspector__description {
+    min-height: 100px;
+}
+
+.content-inspector__fields {
+    flex-grow: 1;
+}
+
+.content-inspector__label-container {
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.content-inspector__footprint-button:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.content-inspector__tags .moonlander-chip-group__chip {
+    background-color: rgb(76, 123, 76);
+}
+
+.content-inspector__tags .moonlander-chip-group__chip--selected {
+    background-color: rgb(131, 166, 131);
+}
+
+.content-inspector__spacer {
+    height: 1px;
+    background-color: black;
+    opacity: 0.5;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}

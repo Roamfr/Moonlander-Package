@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Networking/Editor/UI/AIToolkit.uss?fileID=7433441132597879392&amp;guid=1a35c4884e5c2a44aba8af21584ea8f7&amp;type=3#AIToolkit" />
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Networking/Editor/UI/AIScripterPanel.uss?fileID=7433441132597879392&amp;guid=a9093c9fa94a78742833b39d0f3a65a0&amp;type=3#AIScripterPanel" />
+    <ui:Label tabindex="-1" text="Name of the script" display-tooltip-when-elided="true" class="ai-toolkit-field-label" />
+    <ui:TextField class="ai-scripter__name" />
+    <ui:VisualElement class="ai-toolkit-spacer" />
+    <ui:Label tabindex="-1" text="Describe the functionality you want" display-tooltip-when-elided="true" class="ai-toolkit-field-label" />
+    <ui:TextField multiline="true" class="ai-toolkit__prompt" />
+    <ui:VisualElement class="ai-toolkit-spacer" />
+    <ui:Button text="Generate Script" display-tooltip-when-elided="true" class="ai-toolkit__create" />
+    <ui:VisualElement class="ai-toolkit-spacer" />
+    <uie:Toolbar class="ai-toolkit__output-header">
+        <ui:Label text="Output" class="ai-toolkit__output-label" />
+        <uie:ToolbarButton text="Save To File" display-tooltip-when-elided="true" class="ai-toolkit__save" />
+    </uie:Toolbar>
+   
+    <ui:TextField multiline="true" class="ai-toolkit__output">
+        <Moonlander.Extensions.Editor.Spinner class="ai-toolkit__loading-indicator" />
+    </ui:TextField>
+   
+</ui:UXML>

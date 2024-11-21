@@ -1,0 +1,27 @@
+.generator-cost__unsupported-warning {
+    display: none;
+}
+
+.generator-cost--unsupported .generator-cost__unsupported-warning {
+    display: flex;
+}
+
+.generator-cost__cost-sub-label {
+    opacity: 0.5;
+}
+
+.generator-cost__adjusted-label {
+    -unity-font-style: bold;
+}
+
+
+.panel-section-header {
+    -unity-font-style: bold;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    flex-direction: row;
+}
+
+.panel-section-spacer {
+    height: 24px;
+}

@@ -1,0 +1,64 @@
+.moonlander-chip-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1px 3px;
+   
+    background-color: var(--unity-colors-input_field-background);
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--unity-colors-input_field-border);
+}
+
+.moonlander-chip-group:hover {
+    border-color: var(--unity-colors-input_field-border-hover);
+}
+
+.moonlander-chip-group--focus {
+    border-color: var(--unity-colors-input_field-border-focus);
+}
+
+.moonlander-chip-group__input {
+    min-width: 50px;
+    height: 16px;
+    margin: 1px 0px 0px;
+    flex-grow: 1;
+}
+
+.moonlander-chip-group__input > .unity-text-field__input {
+    padding: 0px;
+    margin: 0px;
+    border-width: 0px;
+    background-color: rgba(0,0,0,0);
+}
+
+.moonlander-chip {
+    background-color: var(--unity-colors-button-background);
+    color: white;
+    
+    border-radius: 3px;
+    padding: 1px 4px;
+    margin: 1px 2px;
+    height: 14px;
+    
+    -unity-text-align: middle-center;
+    font-size: 11px;
+}
+
+.moonlander-chip .unity-text-element
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.moonlander-chip-group__chip:hover {
+    background-color: var(--unity-colors-button-background-hover);
+}
+
+.moonlander-chip-group__chip--selected {
+    background-color: var(--unity-colors-button-background-pressed);
+}
+
+.moonlander-chip-group__chip--selected:hover {
+    background-color: var(--unity-colors-button-background-hover_pressed);
+}

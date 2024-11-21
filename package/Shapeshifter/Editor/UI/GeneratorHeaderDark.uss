@@ -1,0 +1,3 @@
+.generator-header__save-button {
+    background-image: resource('icons/d_preset.context.png');
+}

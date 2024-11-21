@@ -1,0 +1,15 @@
+.moonlander-named-property__amount-container {
+    flex-direction: row;
+}
+
+.moonlander-named-property__amount-container > .unity-base-field {
+    flex-grow: 1;
+}
+
+.moonlander-named-property__controls-spacer {
+    flex-grow: 1;
+}
+
+.moonlander-named-property {
+    flex-grow: 1;
+}

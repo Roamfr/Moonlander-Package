@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/MissingLicense.uss?fileID=7433441132597879392&amp;guid=babcdbf288e57574bb0578780cb26ce7&amp;type=3#MissingLicense" />
+    <ui:VisualElement class="moonlander-missing-license">
+        <ui:VisualElement class="moonlander-missing-license__logo" />
+        <ui:VisualElement class="moonlander-missing-icense__content">
+            <ui:VisualElement class="moonlander-missing-license__lock-icon" />
+            <ui:Label tabindex="-1" text="No valid or active license found. Please activate a valid license to use Moonlander.AI" parse-escape-sequences="true" display-tooltip-when-elided="true" class="moonlander-missing-license__prompt" />
+            <ui:Button text="Open Licensing Window" parse-escape-sequences="true" display-tooltip-when-elided="true" class="moonlander-missing-license__open-window" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

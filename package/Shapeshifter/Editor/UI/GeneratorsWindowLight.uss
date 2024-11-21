@@ -1,0 +1,19 @@
+.create-generator-menu__add {
+    background-image: resource('icons/createaddnew.png');
+}
+
+.create-stack-preset-button__icon {
+    background-image: resource('icons/preset.context.png');
+}
+
+.auto-update-toggle__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/AutoUpdateGeneration Off.png?fileID=2800000&guid=f5dd54a27bb5f95499751e8189dcc5d4&type=3#AutoUpdateGeneration Off');
+}
+
+.auto-update-toggle:checked .auto-update-toggle__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/AutoUpdateGeneration On.png?fileID=2800000&guid=68d81552837f15e4595f423c1fbcd3b1&type=3#AutoUpdateGeneration On');
+}
+
+.moonlander-header-foldout__header-container {
+    background-color: rgb(213, 213, 213);
+}

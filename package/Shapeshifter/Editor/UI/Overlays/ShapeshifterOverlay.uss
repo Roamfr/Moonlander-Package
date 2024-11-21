@@ -1,0 +1,229 @@
+.shapeshifter-overlay {
+    width: 280px;
+}
+
+.shapeshifter-overlay__divider {
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.shapeshifter-overlay__icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.shapeshifter-overlay__section {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.shapeshifter-overlay__generate {
+    height: 32px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.shapeshifter-overlay__generate:hover {
+    background-color: rgba(166, 166, 166, 0.2);
+}
+
+.shapeshifter-overlay__generate:active {
+}
+
+.shapeshifter-overlay__generate-section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/MoonlanderGradient-Normal.png?fileID=2800000&guid=994532bcb07d2d946bf5f5cdc621ed34&type=3#MoonlanderGradient-Normal');
+    margin-right: 8px;
+    margin-left: 8px;
+    flex-direction: row;
+    border-top-left-radius: var(--unity-metrics-default-border_radius);
+    border-top-right-radius: var(--unity-metrics-default-border_radius);
+    border-bottom-right-radius: var(--unity-metrics-default-border_radius);
+    border-bottom-left-radius: var(--unity-metrics-default-border_radius);
+}
+
+.shapeshifter-overlay__prompt {
+    height: 45px;
+    white-space: normal;
+    flex-shrink: 1;
+}
+
+.shapeshifter-overlay__bounds-section {
+    margin-top: 5px;
+}
+
+.shapeshifter-overlay__bounds {
+    flex-direction: row;
+    align-items: center;
+}
+
+.shapeshifter-overlay__bounds > .unity-foldout {
+    flex-grow: 1;
+    -unity-font-style: bold;
+}
+
+.shapeshifter-overlay__bounds > .unity-foldout .unity-foldout__toggle {
+    margin-right: 0;
+}
+
+.shapeshifter-overlay__show-bounds .unity-toggle__input {
+    display: none;
+}
+
+.shapeshifter-overlay__bounds-size-field .unity-composite-field__field-spacer {
+    display: none;
+}
+
+.shapeshifter-overlay__bounds-size-field .unity-composite-field__label {
+    width: 50px;
+    min-width: auto;
+}
+
+.shapeshifter-overlay__bounds-options {
+    width: 16px;
+    height: 16px;
+    background-image: resource('icons/d__menu.png');
+    margin-bottom: 2px;
+    flex-shrink: 0;
+    margin-right: 2px;
+}
+
+.shapeshifter-overlay__bounds-options:hover {
+    background-color: var(--unity-colors-highlight-background-hover);
+}
+
+.shapeshifter-bounds-field {
+    margin-left: 15px;
+}
+
+.shapeshifter-overlay__setup {
+}
+
+.shapeshifter-overlay__generators-container > .unity-base-field__label {
+    width: 65px;
+    min-width: auto;
+}
+
+.shapeshifter-overlay__clear-section {
+    flex-direction: row;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.shapeshifter-overlay__clear-section > .unity-button {
+    flex-basis: 48%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.shapeshifter-overlay__clear-all {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0;
+}
+
+.shapeshifter-overlay__clear-area {
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0;
+}
+
+.shapeshifter-overlay__clear-all .shapeshifter-overlay__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.shapeshifter-overlay__clear-area .shapeshifter-overlay__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.shapeshifter-overlay__setup > .unity-foldout__toggle {
+    -unity-font-style: bold;
+}
+
+.shapeshifter-overlay__generators-button {
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 18px;
+}
+
+.moonlander-button-strip {
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+.moonlander-button-strip > .unity-button {
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.moonlander-button-strip__left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.moonlander-button-strip__middle {
+    border-left-width: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.moonlander-button-strip__right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width: 0;
+}
+
+.shapeshifter-overlay__open-library .shapeshifter-overlay__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/d_LibraryManager.png?fileID=2800000&guid=b0155ca798e4cab418f245d28e707ae7&type=3#d_LibraryManager');
+}
+
+.shapeshifter-overlay__open-generators .shapeshifter-overlay__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/d_Generators.png?fileID=2800000&guid=9ef09688a9e226c459025e4b9d4262ce&type=3#d_Generators');
+}
+
+.shapeshifter-overlay__open-copilot .shapeshifter-overlay__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/d_Copilot.png?fileID=2800000&guid=d43211aab48f9b54db301aa25d817a02&type=3#d_Copilot');
+}
+
+.shapeshifter-overlay__action-bar {
+    height: 21px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    margin-left: 8px;
+}

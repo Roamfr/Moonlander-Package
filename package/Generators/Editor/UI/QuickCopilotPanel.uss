@@ -1,0 +1,61 @@
+.quick-copilot-panel {
+    flex-grow: 1;
+    justify-content: center;
+    background-color: var(--unity-colors-input_field-background);
+}
+
+.input-container {
+    min-width: 250px;
+    max-width: 500px;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    flex-grow: 0;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: var(--unity-colors-window-background);
+}
+
+.quick-copilot-panel .message-generating {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    flex-grow: 0;
+}
+
+.output-container {
+    margin-left: 25px;
+    margin-right: 25px;
+    align-items: center;
+}
+
+.output-container__prompt-container {
+    padding: 15px;
+    border-radius: 3px;
+    background-color: var(--unity-colors-window-background);
+    margin-bottom: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
+    min-width: 300px;
+}
+
+.output-container__prompt-title {
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    padding-bottom: 5px;
+}
+
+.output-container__prompt-label {
+    -unity-text-align: middle-center;
+}
+
+.output-container__apply-button {
+    height: 30px;
+    width: 200px;
+}
+
+.output-container__apply-info {
+    margin-top: 15px;
+    padding: 5px;
+}

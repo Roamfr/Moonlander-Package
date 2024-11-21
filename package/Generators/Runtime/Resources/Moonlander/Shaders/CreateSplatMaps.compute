@@ -1,0 +1,24 @@
+#pragma kernel CSMain
+
+int LayerCount;
+Texture2DArray<float4> Layers;
+int Width;
+int Height;
+int Depth;
+RWStructuredBuffer<float> SplatMap;
+
+SamplerState samplerSplatMap;
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    float splatMapFloat = 0;
+    
+    for (int i = 0; i < LayerCount; i++)
+    {
+        float value =  Layers[uint3(id.x, id.y, i)].r; 
+        
+        SplatMap[id.y * Height * Depth + id.x * Depth + i] = value - splatMapFloat;
+        splatMapFloat += value;
+    }
+}

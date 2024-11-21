@@ -1,0 +1,99 @@
+#pragma kernel EquirectangularFromCubeMap
+
+#define PI 3.1415927f
+
+RWTexture2D<float4> Result;
+Texture2D<float4> Front;
+Texture2D<float4> Back;
+Texture2D<float4> Left;
+Texture2D<float4> Right;
+Texture2D<float4> Up;
+Texture2D<float4> Down;
+SamplerState samplerFront;
+SamplerState samplerBack;
+SamplerState samplerLeft;
+SamplerState samplerRight;
+SamplerState samplerUp;
+SamplerState samplerDown;
+
+
+[numthreads(8,8,1)]
+void EquirectangularFromCubeMap (uint3 id : SV_DispatchThreadID)
+{
+    int width;
+    int height;
+    Result.GetDimensions(width, height);
+    
+    float phi, theta; //Polar coordinates
+
+    float v = 1.0 - (float)id.y / height;
+    theta = v * PI;
+
+    float u = (float)id.x / width;
+    phi = u * 2.0 * PI;
+
+    float x = sin(phi) * sin(theta) * -1.0;
+    float y = cos(theta);
+    float z = cos(phi) * sin(theta) * -1.0;
+
+    float xa, ya, za;
+    float a;
+
+    a = max(max(abs(x), abs(y)), abs(z));
+
+    //Vector Parallel to the unit vector that lies on one of the cube faces
+    xa = x / a;
+    ya = y / a;
+    za = z / a;
+
+    float4 color = float4(0, 0, 0, 1);
+
+    float xPixel, yPixel;
+
+    if (za >= 1 - 0.001)
+    {
+        //Front
+        xPixel = abs((xa + 1.0) / 2.0);
+        yPixel = abs((ya + 1.0) / 2.0);
+        color = Front.SampleLevel(samplerFront, float2(xPixel, yPixel), 0);
+    }
+    else if (za <= -1 + 0.001)
+    {
+        //Back
+        xPixel = abs(((xa + 1.0) / 2.0) - 1.0);
+        yPixel = abs((ya + 1.0) / 2.0);
+        color = Back.SampleLevel(samplerBack, float2(xPixel, yPixel), 0);
+    }
+    else if (xa >= 1 - 0.001)
+    {
+        //Left
+        xPixel = abs((za + 1.0) / 2.0 - 1.0);
+        yPixel = abs((ya + 1.0) / 2.0);
+        color = Left.SampleLevel(samplerLeft, float2(xPixel, yPixel), 0);
+    }
+    else if (xa <= -1 + 0.001)
+    {
+        //Right
+        xPixel = abs((za + 1.0) / 2.0);
+        yPixel = abs((ya + 1.0) / 2.0);
+        color = Right.SampleLevel(samplerRight, float2(xPixel, yPixel), 0);
+        
+    }
+    else if (ya >= 1 - 0.001)
+    {
+        //Up
+        xPixel = abs((xa + 1.0) / 2.0);
+        yPixel = abs(((za + 1.0) / 2.0) - 1.0);
+        color = Up.SampleLevel(samplerUp, float2(xPixel, yPixel), 0);
+    }
+    else if (ya <= -1 + 0.001)
+    {
+        //Down
+        xPixel = abs((xa + 1.0) / 2.0);
+        yPixel = abs((za + 1.0) / 2.0);
+        color = Down.SampleLevel(samplerDown, float2(xPixel, yPixel), 0);
+    }
+
+    
+    Result[id.xy] = color;
+}

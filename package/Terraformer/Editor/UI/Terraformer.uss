@@ -1,0 +1,36 @@
+.terraformer-missing-label {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 24px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.terraformer-property {
+    flex-direction: row;
+    height: 30px;
+}
+
+.terraformer-property__button {
+    flex-grow: 1;
+    flex-direction: row;
+    padding-left: 15px;
+    justify-content: flex-end;
+    -unity-text-align: middle-left;
+}
+
+.terraformer-property__count {
+    opacity: 0.5;
+}
+
+.terraformer-property__add {
+    width: 30px;
+    margin-left: 0px;
+    align-content: center;
+    justify-content: center;
+    -unity-text-align: upper-center;
+    font-size: 24px;
+}

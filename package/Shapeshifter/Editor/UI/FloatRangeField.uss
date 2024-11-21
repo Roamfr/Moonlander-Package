@@ -1,0 +1,31 @@
+.moonlander-float-range-field {
+
+}
+
+.moonlander-float-range-field > .unity-base-field__input {
+    flex-direction: row;
+}
+
+.moonlander-float-range-field .unity-float-field {
+    flex-grow: 1;
+    margin: 0px;
+    margin-right: -1px;
+    flex-basis: 0%;
+    flex-wrap: nowrap;
+    min-width: 0px;
+}
+
+.moonlander-float-range-field .unity-float-field > .unity-base-field__label {
+    margin: 0px;
+    flex-basis: 15px;
+    min-width: 28px;
+}
+
+.moonlander-float-range-field #moonlander-max-input .unity-base-field__label {
+    margin-left: 3px;
+}
+
+.moonlander-float-range-field .unity-float-field__input {
+    margin-right: 1px;
+}
+

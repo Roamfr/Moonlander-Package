@@ -1,0 +1,31 @@
+#pragma kernel CSMain
+
+RWTexture2D<float4> Result;
+int CurveSampleCount;
+RWStructuredBuffer<float> Values;
+
+float interpolate(float t)
+{
+    float index = t * (CurveSampleCount - 1);
+
+    int lowerIndex = (int)index;
+    int upperIndex = min(lowerIndex + 1, CurveSampleCount - 1);
+    
+    float fraction = index - lowerIndex;
+    
+    
+    float lowerValue = Values[lowerIndex].x;
+    float upperValue = Values[upperIndex].x;
+
+    return lerp(lowerValue, upperValue, fraction);
+}
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    float4 color = Result[id.xy];
+
+    Result[id.xy] = float4(interpolate(color.x), interpolate(color.y), interpolate(color.z), color.w);
+}
+
+

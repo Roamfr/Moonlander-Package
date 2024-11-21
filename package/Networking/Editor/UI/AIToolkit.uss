@@ -1,0 +1,62 @@
+.ai-toolkit-spacer {
+    height: 15px;
+    flex-shrink: 0;
+}
+
+.ai-toolkit-field-label {
+    padding-left: 4px;
+    padding-bottom: 2px;
+}
+
+.ai-toolkit__create {
+    height: 32px;
+    font-size: 14px;
+    justify-content: center;
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/MoonlanderGradient-Normal.png?fileID=2800000&guid=994532bcb07d2d946bf5f5cdc621ed34&type=3#MoonlanderGradient-Normal');
+    color: rgb(255, 255, 255);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.ai-toolkit__create:hover {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/MoonlanderGradient-Hover.png?fileID=2800000&guid=6669e85156e121e4ba17ec35be24a5f0&type=3#MoonlanderGradient-Hover');
+}
+
+.ai-toolkit__prompt {
+    min-height: 100px;
+    white-space: normal;
+}
+
+.ai-function-panel {
+    flex-grow: 1;
+}
+
+.ai-toolkit__loading-indicator {
+    position: absolute;
+    align-self: center;
+    width: 16px;
+    height: 16px;
+}
+
+.ai-toolkit__output-header {
+    flex-direction: row;
+    margin-left: -4px;
+    margin-right: -4px;
+    margin-bottom: 5px;
+}
+
+.ai-toolkit__output-label {
+    flex-grow: 1;
+    padding-left: 5px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}
+
+.ai-toolkit__save {
+    border-right-width: 0;
+}
+
+.ai-settings__blockade-labs-key {
+}

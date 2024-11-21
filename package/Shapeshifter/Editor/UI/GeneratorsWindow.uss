@@ -1,0 +1,114 @@
+.generator-group--empty {
+    display: none;
+}
+.generator-item {
+    flex-direction: row;
+    flex-grow: 1;
+    align-content: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 36px;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--unity-colors-toolbar_button-border);
+    -unity-text-align: middle-left;
+}
+
+.generator-item:hover {
+    background-color: var(--unity-colors-highlight-background-hover);
+}
+
+.generator-item--selected {
+    background-color: var(--unity-colors-highlight-background);
+}
+
+.generator-item--selected:hover {
+    background-color: var(--unity-colors-highlight-background);
+}
+
+.generator-item .generator-item__label {
+    margin: 0;
+    padding-left: 2px;
+}
+
+.generator-item__type {
+    font-size: 10px;
+    opacity: 0.5;
+    padding-left: 5px;
+}
+
+.generator-item__left-container {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.generator-item__right-container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.generator-item__status {
+    width: 16px;
+    height: 16px;
+    opacity: 1;
+}
+
+.generator-item__status:hover {
+    opacity: .65;
+}
+
+.generator-item__status--all-good:hover {
+    opacity: 1;
+}
+
+.moonlander-drag-bar {
+    height: 2px;
+    background-color: var(--unity-colors-highlight-background);
+}
+
+.create-generator-menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-left: 5px;
+    border-right-width: 0;
+}
+
+.create-generator-menu__add {
+    width: 16px;
+    height: 16px;
+}
+
+.create-stack-preset-button__icon {
+    background-image: var(--moonlander-icons-preset);
+    width: 16px;
+    height: 16px;
+}
+
+.moonlander-spacer {
+    flex-grow: 1;
+}
+
+.moonlander-header-foldout {
+}
+
+.moonlander-header-foldout__content {
+}
+
+.moonlander-header-foldout__header-container {
+    -unity-font-style: bold;
+    height: 24px;
+    border-bottom-width: 1px;
+    border-bottom-color: var(--unity-colors-toolbar_button-border);
+    flex-direction: row;
+}
+
+.auto-update-toggle__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.create-stack-preset-button {
+    border-left-width: 0;
+    border-right-width: 0;
+}

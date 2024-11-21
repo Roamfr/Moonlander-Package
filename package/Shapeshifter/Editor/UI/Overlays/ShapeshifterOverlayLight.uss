@@ -1,0 +1,18 @@
+.shapeshifter-overlay__clear-all .shapeshifter-overlay__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/ClearArea.png?fileID=2800000&guid=b5fa26d97ecb3bd40ac8a9fc4636776d&type=3#ClearArea');
+}
+
+.shapeshifter-overlay__clear-area .shapeshifter-overlay__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/ClearArea.png?fileID=2800000&guid=b5fa26d97ecb3bd40ac8a9fc4636776d&type=3#ClearArea');
+}
+
+.shapeshifter-overlay__show-bounds > .shapeshifter-overlay__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/GenerationBounds.png?fileID=2800000&guid=72663c4bb64bb444396285abecf0511c&type=3#GenerationBounds');
+}
+.shapeshifter-overlay__show-in-library {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/GoTo.png?fileID=2800000&guid=30df6646a5fd2734abe501febe1aa3f7&type=3#GoTo');
+}
+
+.shapeshifter-overlay__prompt-info-icon {
+    background-image: resource('_Help');
+}

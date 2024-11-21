@@ -1,0 +1,459 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1030679895, guid: b16bdd9ac385d244c9b2e6f023027396, type: 3}
+  m_Name: DynamicTerrainHeightPreset
+  m_EditorClassIdentifier: 
+  _stack:
+    _layers:
+    - rid: 2942413470766202939
+    - rid: 2942413470766202942
+    - rid: 2942413470766202941
+    - rid: 2942413470766202938
+    - rid: 2942413470766202940
+  references:
+    version: 2
+    RefIds:
+    - rid: 2942413470766202938
+      type: {class: GroupLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: '%Mountains'
+        _blendMode: 6
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _children:
+        - rid: 2942413470766202943
+    - rid: 2942413470766202939
+      type: {class: GroupLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: '%Plains'
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _children:
+        - rid: 2942413470766202944
+    - rid: 2942413470766202940
+      type: {class: GroupLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: '%Roads'
+        _blendMode: 4
+        _opacity: 0
+        _enabled: 1
+        _filters:
+          _filters: []
+        _children:
+        - rid: 2942413470766202945
+        - rid: 2942413470766202946
+    - rid: 2942413470766202941
+      type: {class: GroupLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: '%Dunes'
+        _blendMode: 6
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _children:
+        - rid: 2942413470766202947
+        - rid: 2942413470766202948
+        - rid: 2942413470766202949
+        - rid: 2942413470766202950
+    - rid: 2942413470766202942
+      type: {class: GroupLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: '%Hills'
+        _blendMode: 6
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _children:
+        - rid: 2942413470766202951
+        - rid: 2942413470766202952
+        - rid: 2942413470766202953
+    - rid: 2942413470766202943
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Base
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 2942413470766202954
+        _type: 2
+        _offset: {x: 0, y: 0}
+        _frequency: 10
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: 0
+          amplitude: 33.4
+          frequency: 24.4
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 2942413470766202944
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Base
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 2942413470766202955
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 10
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 2942413470766202945
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 2942413470766202956
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 10
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 15
+          gain: 0.02
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 2942413470766202946
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 6
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 2942413470766202957
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 10
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 15
+          gain: 0.02
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 2942413470766202947
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Base Dunes
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 5
+        _fractalData:
+          type: 2
+          octaves: 2
+          lacunarity: 1
+          gain: 0.3
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: 0
+          amplitude: 150
+          frequency: 7
+          fractalType: 4
+          octaves: 3
+          lacunarity: 0.2
+    - rid: 2942413470766202948
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Cells
+        _blendMode: 7
+        _opacity: 0.3
+        _enabled: 1
+        _filters:
+          _filters: []
+        _type: 2
+        _offset: {x: 0, y: 0}
+        _frequency: 10
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 1.5
+          gain: 0.5
+        _cellularData:
+          type: 1
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 2.48
+          frequency: 4.34
+          fractalType: 4
+          octaves: 3
+          lacunarity: 3.21
+    - rid: 2942413470766202949
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Noise
+        _blendMode: 4
+        _opacity: 0.2
+        _enabled: 1
+        _filters:
+          _filters: []
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 10
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 2942413470766202950
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Hills
+        _blendMode: 7
+        _opacity: 0.4
+        _enabled: 1
+        _filters:
+          _filters: []
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 8
+        _fractalData:
+          type: 0
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 2942413470766202951
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 2942413470766202958
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 20
+        _fractalData:
+          type: 0
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 2942413470766202952
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 7
+        _opacity: 0.79
+        _enabled: 1
+        _filters:
+          _filters: []
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 10
+        _fractalData:
+          type: 0
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: 1
+          amplitude: 150
+          frequency: 2
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 2942413470766202953
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 9
+        _opacity: 0.5
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 2942413470766202959
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 5
+        _fractalData:
+          type: 0
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 2942413470766202954
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0
+        _inputMid: 0.41
+        _inputHigh: 0.315
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 2942413470766202955
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0
+        _inputMid: 0.62
+        _inputHigh: 1
+        _outputLow: 0
+        _outputHigh: 0.06
+    - rid: 2942413470766202956
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.434
+        _inputMid: 0.5
+        _inputHigh: 0.459
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 2942413470766202957
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.37
+        _inputMid: 0.5
+        _inputHigh: 0.349
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 2942413470766202958
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0
+        _inputMid: 0.5
+        _inputHigh: 1
+        _outputLow: 0
+        _outputHigh: 0.445
+    - rid: 2942413470766202959
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0
+        _inputMid: 0.651
+        _inputHigh: 1
+        _outputLow: 0
+        _outputHigh: 0.683

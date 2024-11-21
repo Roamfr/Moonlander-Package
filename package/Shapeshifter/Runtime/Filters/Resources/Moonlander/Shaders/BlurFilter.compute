@@ -1,0 +1,46 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+RWTexture2D<float4> Result;
+Texture2D<float4> Input;
+
+float Radius;
+int Width;
+int Height;
+float2 BoundsSize;
+
+SamplerState samplerInput;
+
+// https://www.shadertoy.com/view/ct3fR8#
+static float4 box_blur(float size, float2 uv)
+{
+    const float2 resolution = float2(Width, Height);
+    
+    size = floor((size * min(Width, Height)) / 10);
+    float4 result = float4(0.0, 0.0, 0.0, 1.0);
+    
+    for (float x = -size; x <= size; x++)
+    {
+        for (float y = -size; y <= size; y++)
+        {
+            result += Input.SampleLevel(samplerInput, float2(uv + float2(x, y) / resolution), 0);
+        }
+    }
+    
+    float c = size * 2.0 + 1.0;
+    return result/(c*c);
+}
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    const float2 resolution = float2(Width, Height);
+    
+    float2 uv = id.xy / resolution;
+    
+    float4 sum = box_blur(Radius, uv);
+
+    Result[id.xy] = float4(sum.rgb, 1);
+}
+
+

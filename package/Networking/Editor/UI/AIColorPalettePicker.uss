@@ -1,0 +1,30 @@
+.ai-color-picker__output-container {
+   justify-content: center;
+    min-height: 125px;
+}
+
+.ai-color-picker__output-loading-color {
+    flex-grow: 1;
+}
+
+.ai-color-picker__output-color {
+    flex-grow: 1;
+}
+
+.ai-color-picker__output-color:hover
+{
+    border-bottom-width: 10px;
+    border-bottom-color: rgba(255, 255, 255, 0.75);
+}
+
+.ai-color-picker__output-colors {
+    flex-grow: 1;
+    align-content: stretch;
+    flex-direction: row;
+}
+
+.ai-color-picker__generating-spinner {
+    position: absolute;
+    align-self: center;
+}
+

@@ -1,0 +1,10 @@
+
+
+.ai-toolkit__output {
+    flex-grow: 1;
+    min-height: 250px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(25, 25, 25);
+}

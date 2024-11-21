@@ -1,0 +1,99 @@
+#pragma kernel CSMain
+
+Texture2D<float4> Input;
+RWTexture2D<float4> Result;
+float Width;
+float Height;
+
+SamplerState samplerInput;
+
+
+float3 triangleNormal(float3 a, float3 b, float3 c)
+{
+    return normalize(cross(b - a, c - a));
+}
+
+float lengthSquared(float3 a)
+{
+    return a.x * a.x + a.y * a.y + a.z * a.z;
+}
+
+float angle(float3 from, float3 to)
+{
+    float denominator  = sqrt(lengthSquared(from) * lengthSquared(to));
+    if (denominator  < 1e-15)
+        return 0;
+
+    float dotProd = clamp(dot(from, to) / denominator , -1, 1);
+    return degrees(dotProd);
+}
+
+float remap(float value, float from1, float to1, float from2, float to2)
+{
+    return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
+}
+
+
+[numthreads(8,8,1)]
+void CSMain ( uint3 id : SV_DispatchThreadID)
+{
+    const float dimX = Width;
+    const float dimY = Height;
+
+    const float nx = id.x / (dimX - 1);
+    const float ny = id.y / (dimY - 1);
+    
+    const float precision = 0.001;
+
+    float3 a = float3(
+        -precision,
+        Input.SampleLevel(samplerInput, float2(nx - precision, ny), 0).x,
+        0
+    );
+    
+    float3 b = float3(
+        0,
+        Input.SampleLevel(samplerInput, float2(nx, ny + precision), 0).x,
+        precision 
+    );
+    
+    float3 c = float3(
+        precision,
+        Input.SampleLevel(samplerInput, float2(nx + precision, ny), 0).x,
+        0
+    );
+    
+    float3 d = float3(
+        0,
+        Input.SampleLevel(samplerInput, float2(nx, ny - precision), 0).x,
+        -precision
+    );
+
+    const float3 normal1 = triangleNormal(a, b, c);
+    const float3 normal2 = triangleNormal(c, d, a);
+
+    const float3 slopeNormal = normalize(normal1 + normal2);
+
+    const float resultAngle = angle(slopeNormal, float3(0, 1, 0));
+    
+    float steepness = remap(resultAngle, 0, 90, 0, 1);
+
+    Result[id.xy] = float4(steepness, steepness, steepness, Input[id.xy].a);
+
+    
+    // Alternative.
+    // ========================
+    // An alternative implementation. Doesn't work fully. Something to do with the precision.
+    // To see the issue, use the TerrainGenerator, and change the terrain resolution.
+    
+    // const float precisionX = 1 / dimX;
+    // const float precisionY = 1 / dimY;
+    // float dx = Input.SampleLevel(samplerInput, float2(nx + precisionX, ny           ),  0).r - Input.SampleLevel(samplerInput, float2(nx, ny), 0).r;
+    // float dy = Input.SampleLevel(samplerInput, float2(nx,             ny + precisionY), 0).r - Input.SampleLevel(samplerInput, float2(nx, ny), 0).r;
+    //
+    // float steepness = atan(sqrt(dx * dx + dy * dy));
+    
+    // Result[id.xy] = float4(steepness, steepness, steepness, Input[id.xy].a);
+}
+
+

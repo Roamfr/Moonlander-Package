@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/FeedbackWindow.uss?fileID=7433441132597879392&amp;guid=02375315293f7784f95f3530935ba6c2&amp;type=3#FeedbackWindow" />
+    <ui:VisualElement class="feedback-logo" />
+    <ui:VisualElement class="feedback-form">
+        <ui:Label tabindex="-1" text="Title" parse-escape-sequences="true" display-tooltip-when-elided="true" class="feedback-field-label" />
+        <ui:TextField picking-mode="Ignore" class="feedback-title" />
+        <ui:Label tabindex="-1" text="Your Feedback" parse-escape-sequences="true" display-tooltip-when-elided="true" class="feedback-field-label" />
+        <ui:TextField picking-mode="Ignore" multiline="true" class="feedback-description" />
+        <ui:RadioButtonGroup value="-1" choices=",,," class="feedback-mood" />
+        <Moonlander.Extensions.Editor.Spinner />
+        <ui:HelpBox message-type="Error" class="feedback-form__info"/>
+        <ui:Button text="Submit" class="feedback-form__submit" />
+    </ui:VisualElement>
+    <ui:VisualElement class="feedback-submitted">
+        <ui:Label tabindex="-1" text="Thank you for your feedback." parse-escape-sequences="true" display-tooltip-when-elided="true" class="feedback-submitted__title" />
+        <ui:Label tabindex="-1" text="We have recived your feedback, you can safely close the window now or submit some more feedback!" parse-escape-sequences="true" display-tooltip-when-elided="true" class="feedback-submitted__body" />
+        <ui:Button text="Submit More Feedback" parse-escape-sequences="true" display-tooltip-when-elided="true" class="feedback-submitted__send-more" />
+    </ui:VisualElement>
+</ui:UXML>

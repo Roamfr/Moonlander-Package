@@ -1,0 +1,436 @@
+{
+    "entries": [
+        {
+            "className": "Moonlander.Generators.Editor.SessionQuickChatHistory",
+            "classGUID": "ad2c6adb63a54003905d3fd7be650445",
+            "dllGUID": "27a7f5aaf2034154cac52e5bae7fae2c",
+            "fileId": "673959807"
+        },
+        {
+            "className": "Moonlander.Generators.Editor.TerraformerGeneratorEditor",
+            "classGUID": "3863cfc3eaca4ede9aaef6d36718587a",
+            "dllGUID": "27a7f5aaf2034154cac52e5bae7fae2c",
+            "fileId": "343455566"
+        },
+        {
+            "className": "Moonlander.Generators.SkyShaperGenerator",
+            "classGUID": "942fe89849f2ffc4c86fd573e49b28af",
+            "dllGUID": "bb947c2285aa59945b0844a87cb38819",
+            "fileId": "-55284931"
+        },
+        {
+            "className": "Moonlander.Generators.SimplePathMapGenerator",
+            "classGUID": "f5b317d34ea048a286b14f4571482b06",
+            "dllGUID": "bb947c2285aa59945b0844a87cb38819",
+            "fileId": "-341655728"
+        },
+        {
+            "className": "Moonlander.Generators.TerrainGenerator",
+            "classGUID": "5aa2c89fb3cc91c4f9f5b0de838929cd",
+            "dllGUID": "bb947c2285aa59945b0844a87cb38819",
+            "fileId": "2049758169"
+        },
+        {
+            "className": "Moonlander.Generators.PlaneGenerator",
+            "classGUID": "1d060eb8eadb5a446bc5ca5221f758b0",
+            "dllGUID": "bb947c2285aa59945b0844a87cb38819",
+            "fileId": "691626440"
+        },
+        {
+            "className": "Moonlander.Generators.ColorGradingGenerator",
+            "classGUID": "15313b63292c420bba8fe1c0c0a9f4c9",
+            "dllGUID": "bb947c2285aa59945b0844a87cb38819",
+            "fileId": "865981652"
+        },
+        {
+            "className": "Moonlander.Generators.MapGenerator",
+            "classGUID": "aefbceff24424c2496ec09a3cf50b286",
+            "dllGUID": "bb947c2285aa59945b0844a87cb38819",
+            "fileId": "-1823148588"
+        },
+        {
+            "className": "Moonlander.Generators.ObjectPlacementGenerator",
+            "classGUID": "814e5b2d9f50b4c4e94d72d765183e8a",
+            "dllGUID": "bb947c2285aa59945b0844a87cb38819",
+            "fileId": "-945914773"
+        },
+        {
+            "className": "Moonlander.Generators.TerraformerGenerator",
+            "classGUID": "38490abcf1c277b4a914ad04245606ca",
+            "dllGUID": "bb947c2285aa59945b0844a87cb38819",
+            "fileId": "-50813012"
+        },
+        {
+            "className": "Moonlander.Networking.AIToolkitWindow",
+            "classGUID": "cede65f6d71b4a4786740146c3e1d0bd",
+            "dllGUID": "c26c7f40fe390754c84d5080bc0c3ce5",
+            "fileId": "763787095"
+        },
+        {
+            "className": "Moonlander.Networking.AISettings",
+            "classGUID": "6acad0aafa060db4d8481d39e945fcb1",
+            "dllGUID": "cc04282cdba29be4ebc74e07f8677067",
+            "fileId": "1103040152"
+        },
+        {
+            "className": "Moonlander.Terraformer.MultiShaderConverterWindow",
+            "classGUID": "fa33fab90b54416a8fd402bfc7a73556",
+            "dllGUID": "2c0d258e5e3ba2b4f8bd72068b29fd03",
+            "fileId": "-944752353"
+        },
+        {
+            "className": "Moonlander.Terraformer.WindEffectTemplate",
+            "classGUID": "38068ef99611acf4a86a06a3f9c3d842",
+            "dllGUID": "e2d7e7b8ac818894594f192e658384fb",
+            "fileId": "-137038520"
+        },
+        {
+            "className": "Moonlander.Terraformer.CameraAngleTemplate",
+            "classGUID": "04de32c2ecfbb644f9ede9df6d411ca3",
+            "dllGUID": "e2d7e7b8ac818894594f192e658384fb",
+            "fileId": "1798947595"
+        },
+        {
+            "className": "Moonlander.Terraformer.ToonEffectTemplate",
+            "classGUID": "e368ce68e93c76946816b520edd6d2a9",
+            "dllGUID": "e2d7e7b8ac818894594f192e658384fb",
+            "fileId": "1669784309"
+        },
+        {
+            "className": "Moonlander.Terraformer.TopTextureCoverTemplate",
+            "classGUID": "b37962c992c897744bb9648f38dbbb2d",
+            "dllGUID": "e2d7e7b8ac818894594f192e658384fb",
+            "fileId": "-431647806"
+        },
+        {
+            "className": "Moonlander.Terraformer.OutlineTemplate",
+            "classGUID": "a33f5ea8cf04f854d95f52d7829df958",
+            "dllGUID": "e2d7e7b8ac818894594f192e658384fb",
+            "fileId": "-935497918"
+        },
+        {
+            "className": "Moonlander.Terraformer.ColorPaletteTemplate",
+            "classGUID": "b721bfdd9890d9849a7ab4b0e27aeed2",
+            "dllGUID": "e2d7e7b8ac818894594f192e658384fb",
+            "fileId": "-938856677"
+        },
+        {
+            "className": "Moonlander.Terraformer.FoliageAmountTemplate",
+            "classGUID": "7cbf6fe7c1b6b61438a6d392a39caf63",
+            "dllGUID": "e2d7e7b8ac818894594f192e658384fb",
+            "fileId": "2031092762"
+        },
+        {
+            "className": "Moonlander.Terraformer.TopWeatherCoverTemplate",
+            "classGUID": "ee89feb6435c01c4ea89c44e3f9c073b",
+            "dllGUID": "e2d7e7b8ac818894594f192e658384fb",
+            "fileId": "227972964"
+        },
+        {
+            "className": "Moonlander.Terraformer.MaterialData",
+            "classGUID": "35b44093e55abd54b97e8f29635c4115",
+            "dllGUID": "e2d7e7b8ac818894594f192e658384fb",
+            "fileId": "-2062247148"
+        },
+        {
+            "className": "Moonlander.Core.Editor.FeedbackWindow",
+            "classGUID": "8197bda2b32b4f1f8ed6a09868b5a7c6",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "-1372675524"
+        },
+        {
+            "className": "Moonlander.Core.Editor.SessionChatHistory",
+            "classGUID": "dd96fca562ad41e3a7c45b49fb154cdb",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "1067150050"
+        },
+        {
+            "className": "Moonlander.Core.Editor.GeneratorsWindow",
+            "classGUID": "8a8939198bb741b58e056e8e9b25cf2f",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "-429091455"
+        },
+        {
+            "className": "Moonlander.Core.Editor.ShapeshifterDebugInfoWindow",
+            "classGUID": "e3043bbe776761b4f8e6d92928b3c8bd",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "-1227742032"
+        },
+        {
+            "className": "Moonlander.Core.Editor.AutoUpdateOptionsWindow",
+            "classGUID": "6d2775de45e14d30bfd60bcf3671e7bc",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "-1758261553"
+        },
+        {
+            "className": "Moonlander.Core.Editor.GeneratorStackPresetEditor",
+            "classGUID": "5f41668c10c447f2bdf43706aacdd847",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "619252346"
+        },
+        {
+            "className": "Moonlander.Core.Editor.ShapeshifterSettings",
+            "classGUID": "c40d7379ad3eab047801e44857c36865",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "-849062259"
+        },
+        {
+            "className": "Moonlander.Core.Editor.PrefabReplacerEditor",
+            "classGUID": "d9e33fe6e517a3b4bbc2ecc3aa8b29d2",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "715938159"
+        },
+        {
+            "className": "Moonlander.Core.Overlays.BoundsSettingsWindow",
+            "classGUID": "b66847e079e14393b5852ed77a183c96",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "-1703441246"
+        },
+        {
+            "className": "Moonlander.Core.Editor.LicensingWindow",
+            "classGUID": "72e318fc51c2cf34788ffd193b7c155a",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "704393796"
+        },
+        {
+            "className": "Moonlander.Core.Editor.MoonlanderSetupWindow",
+            "classGUID": "f0484680b41347478c635374481db8c4",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "-262287140"
+        },
+        {
+            "className": "Moonlander.Core.Editor.LayerStackWindow",
+            "classGUID": "333f3140d5b54cc4af36163acae27589",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "899863702"
+        },
+        {
+            "className": "Moonlander.Core.Editor.LibraryEditor",
+            "classGUID": "51e68374d93343d1a9b30b6dc621b269",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "36229065"
+        },
+        {
+            "className": "Moonlander.Core.Editor.LibraryWindow",
+            "classGUID": "36a51cd2aa9a469fada47e090d5de608",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "1351910492"
+        },
+        {
+            "className": "Moonlander.Core.Editor.DataRegistriesFillPopup",
+            "classGUID": "e30e79c5d2434ba28462b96352fa469a",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "1642512132"
+        },
+        {
+            "className": "Moonlander.Core.Editor.CopilotWindow",
+            "classGUID": "2b9e8542ab63424eb1275b609220caef",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "-1006062657"
+        },
+        {
+            "className": "Moonlander.Core.Editor.GeneratorsDropdownWindow",
+            "classGUID": "1fd5b06552da4c708713323388448929",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "-584344517"
+        },
+        {
+            "className": "Moonlander.Core.Editor.ShapeshifterPreferences",
+            "classGUID": "4abdcec8b77a46e6b982ea33fb6329a6",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "912479682"
+        },
+        {
+            "className": "Moonlander.Core.Editor.GenerationExampleWindow",
+            "classGUID": "2af8f0bc4b274355b568a1f3cdfe0c5f",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "1337928208"
+        },
+        {
+            "className": "Moonlander.Core.Editor.DataRegistrySourceEditor",
+            "classGUID": "382623795e12427b988c5876ed012b49",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "2057576237"
+        },
+        {
+            "className": "Moonlander.Core.Overlays.GenerationSettingsWindow",
+            "classGUID": "fb06dad843db49ba98a7a99bb0b55c92",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "1506974509"
+        },
+        {
+            "className": "Moonlander.Core.Editor.GeneratorEditor",
+            "classGUID": "14d1ff21366d4865b19a9b7f83a8e93a",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "1030927918"
+        },
+        {
+            "className": "Moonlander.Core.Editor.LicensedEditorWindow",
+            "classGUID": "689d2ba564424c14bd12097b21acaae0",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "250879701"
+        },
+        {
+            "className": "Moonlander.Core.Editor.DataRegistrySourceTool",
+            "classGUID": "8397af7f5c1148af91ca209fc6f973af",
+            "dllGUID": "57ee1781ddc1b944581801dda96f9e22",
+            "fileId": "-1360962922"
+        },
+        {
+            "className": "Moonlander.Core.SingleObjectDataRegistrySource",
+            "classGUID": "e0ac7395451a4a159dcd49d90e4c98ca",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "296485210"
+        },
+        {
+            "className": "Moonlander.Core.TextureStampDataRegistrySource",
+            "classGUID": "cea559dd6a6945869286d40f43665540",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "-893035271"
+        },
+        {
+            "className": "Moonlander.Core.KDTrees.HeapTests",
+            "classGUID": "e3f22e25c6d555d45b86d62ecaaf8895",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "1489475512"
+        },
+        {
+            "className": "Moonlander.Core.GeneratorStackPreset",
+            "classGUID": "93893dd7979e4f6cbc964712a73b9add",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "250234093"
+        },
+        {
+            "className": "Moonlander.Core.DataRegistrySource",
+            "classGUID": "685c8b588ccb4e5d86f0ff67bc68d99c",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "-1277102214"
+        },
+        {
+            "className": "Moonlander.Core.LayerStackStampDataRegistrySource",
+            "classGUID": "3c88c4c113d84f12a1e2552e35df9c67",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "606217648"
+        },
+        {
+            "className": "Moonlander.Core.Generator",
+            "classGUID": "059f3833989680a4f8cf2c257eaa559e",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "418049893"
+        },
+        {
+            "className": "Moonlander.Core.Library",
+            "classGUID": "b30ede9e1eb87d444b5c680fb67f1b28",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "-1003069395"
+        },
+        {
+            "className": "Moonlander.Core.GeneratedSceneData",
+            "classGUID": "f836361d571546d083e2b24885b667d7",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "-1288652674"
+        },
+        {
+            "className": "Moonlander.Core.SceneGenerationManager",
+            "classGUID": "35b74902312e2b44baaebbcce5aaab97",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "1535722317"
+        },
+        {
+            "className": "Moonlander.Core.GlobalGenerator",
+            "classGUID": "0c0e6a060a654ac491a91a6c102e205e",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "288779858"
+        },
+        {
+            "className": "Moonlander.Core.PrefabReplacer",
+            "classGUID": "69b415ebf4cb91845a3aea270c115cd1",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "-509737015"
+        },
+        {
+            "className": "Moonlander.Core.BoundsGenerator",
+            "classGUID": "159871bc64ba498b9fd32d6fc82bf920",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "-255625287"
+        },
+        {
+            "className": "Moonlander.Core.GPUMeshRenderer",
+            "classGUID": "942c468839804784c8efd5256c0c2488",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "-1390324306"
+        },
+        {
+            "className": "Moonlander.Core.StampDataRegistrySource",
+            "classGUID": "6e54f1ab4c209c5419b9625930ea24a4",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "-1135283723"
+        },
+        {
+            "className": "Moonlander.Core.Layers.LayerStackPreset",
+            "classGUID": "864936db65554c3fab3558b8d5fa10f3",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "1030679895"
+        },
+        {
+            "className": "Moonlander.Core.GenerationState",
+            "classGUID": "e1e0542865684b22a1900935d95630a5",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "1520396711"
+        },
+        {
+            "className": "Moonlander.Core.SplineDataRegistrySource",
+            "classGUID": "74e0e606ef9d4ee1898e9d6deb82d4a0",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "462108942"
+        },
+        {
+            "className": "Moonlander.Core.DataRegistrySourceManager",
+            "classGUID": "082c4eadc0d34ca0a08f264c0b634769",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "1765974250"
+        },
+        {
+            "className": "Moonlander.Core.MultiObjectDataRegistrySource",
+            "classGUID": "8450f1ad6ea642d18e24f3184bfab4c9",
+            "dllGUID": "b16bdd9ac385d244c9b2e6f023027396",
+            "fileId": "1782865753"
+        },
+        {
+            "className": "Moonlander.Extensions.Editor.OverlayPopupWindow",
+            "classGUID": "2ace8285fca04b7daf12ed6530d63c8d",
+            "dllGUID": "8e3f578dc8c14b047a986432c6c6ddc5",
+            "fileId": "867972800"
+        },
+        {
+            "className": "Moonlander.Extensions.Editor.BaseEditorWindow",
+            "classGUID": "2f7d029703974e4b8f91790a3e7ec376",
+            "dllGUID": "8e3f578dc8c14b047a986432c6c6ddc5",
+            "fileId": "-1769004141"
+        },
+        {
+            "className": "Moonlander.Extensions.Debugger",
+            "classGUID": "ca6eebf589f04f1439625cb139f58649",
+            "dllGUID": "b1021be056875dc46b1055f8772a7c0b",
+            "fileId": "-715788835"
+        },
+        {
+            "className": "Moonlander.Extensions.FPSCounter",
+            "classGUID": "d5f8fa8aeae8afe48931f28c556a9ee9",
+            "dllGUID": "b1021be056875dc46b1055f8772a7c0b",
+            "fileId": "-438862988"
+        },
+        {
+            "className": "Moonlander.Extensions.TerrainTextureAsset",
+            "classGUID": "6a3fc245ecacbd044849857eb114b4c7",
+            "dllGUID": "b1021be056875dc46b1055f8772a7c0b",
+            "fileId": "1359096377"
+        },
+        {
+            "className": "Moonlander.Extensions.ApplicationQuitter",
+            "classGUID": "41b01b6e36038424eb45ca2536c1e70d",
+            "dllGUID": "b1021be056875dc46b1055f8772a7c0b",
+            "fileId": "-56583589"
+        }
+    ]
+}

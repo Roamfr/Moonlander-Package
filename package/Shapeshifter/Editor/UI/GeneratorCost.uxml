@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/GeneratorCost.uss?fileID=7433441132597879392&amp;guid=03188b50cbaa00d4fa5d82d924814218&amp;type=3#GeneratorCost" />
+    <ui:HelpBox message-type="Warning" class="generator-cost__unsupported-warning" />
+    <ui:VisualElement class="generator-cost__container">
+        <ui:Label text="Generator Costs" class="panel-section-header" />
+        <ui:Slider binding-path="_costWeight" picking-mode="Ignore" label="Weight" value="1" high-value="1" show-input-field="true" class="unity-base-field__aligned-field generator-cost__weight" />
+        <ui:VisualElement class="unity-base-field">
+            <ui:Label text="Cost" class="unity-base-field__label" />
+            <ui:Label text="Initial -" class="generator-cost__cost-sub-label" />
+            <ui:Label text="0/m" class="generator-cost__initial-cost" />
+            <ui:VisualElement style="width: 2px; margin-right: 5px; margin-left: 5px; background-color: rgb(94, 94, 94); align-self: center; height: 12px;" />
+            <ui:Label text="Adjusted -" class="generator-cost__cost-sub-label" />
+            <ui:Label text="0/m" class="generator-cost__adjusted-cost generator-cost__adjusted-label" />
+        </ui:VisualElement>
+        <ui:ProgressBar value="0" title="0/0" class="generator-cost__budget-usage" tooltip="The amount this Generator uses of the total generation budget." />
+        <ui:HelpBox class="generator-cost__info-box" />
+    </ui:VisualElement>
+    <ui:VisualElement class="panel-section-spacer"/>
+    <ui:VisualElement class="generator-cost__stack-stats-container">
+        <ui:Label text="Stack Costs" class="panel-section-header" />
+        
+        <ui:VisualElement class="unity-base-field">
+            <ui:Label text="Total Cost" class="unity-base-field__label" />
+            <ui:Label text="Initial -" class="generator-cost__cost-sub-label" />
+            <ui:Label text="0/m" class="generator-cost__stack-initial-cost" />
+            <ui:VisualElement style="width: 2px; margin-right: 5px; margin-left: 5px; background-color: rgb(94, 94, 94); align-self: center; height: 12px;" />
+            <ui:Label text="Adjusted -" class="generator-cost__cost-sub-label"/>
+            <ui:Label text="0/m" class="generator-cost__stack-adjusted-cost generator-cost__adjusted-label" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

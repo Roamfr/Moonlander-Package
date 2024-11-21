@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Terraformer/Editor/UI/MultiShaderConverterWindow.uss?fileID=7433441132597879392&amp;guid=3380eef445c7f0d4db61a69a6a7d4156&amp;type=3#MultiShaderConverterWindow" />
+    <ui:VisualElement class="converter">
+        <ui:VisualElement class="converter-drop-area">
+            <ui:Label tabindex="-1" text="Drop prefabs or materials here to convert their materials" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+        </ui:VisualElement>
+        <ui:ListView focusable="true" show-add-remove-footer="true" show-bound-collection-size="false" selection-type="Multiple" class="converter-materials" />
+        <ui:Button text="Convert Materials" parse-escape-sequences="true" display-tooltip-when-elided="true" class="converter-button" />
+    </ui:VisualElement>
+</ui:UXML>

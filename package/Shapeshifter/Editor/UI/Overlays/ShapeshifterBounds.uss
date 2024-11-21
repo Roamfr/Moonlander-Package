@@ -1,0 +1,10 @@
+
+
+.shapeshifter-bounds-field .unity-composite-field__field-spacer {
+    display: none;
+}
+
+.shapeshifter-bounds-field .unity-composite-field__label {
+    width: 50px;
+    min-width: auto;
+}

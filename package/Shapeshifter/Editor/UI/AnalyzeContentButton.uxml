@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/AnalyzeContentButton.uss?fileID=7433441132597879392&amp;guid=a55a3a207e7115d4b852a0309f0f9869&amp;type=3#AnalyzeContentButton" />
+    <ui:VisualElement class="moonlander-analyze-content__analyze-container" style="flex-direction: row;">
+        <ui:Button text="Analyze" class="moonlander-analyze-content__analyze-button" />
+        <uie:EnumFlagsField type="Moonlander.Core.Editor.AnalyzePropertyType, Moonlander.Shapeshifter.Editor" value="-1" class="moonlander-analyze-content__analyze-types-field" />
+    </ui:VisualElement>
+    <ui:Label class="moonlander-analyze-content__auto-tag-usage" />
+</ui:UXML>

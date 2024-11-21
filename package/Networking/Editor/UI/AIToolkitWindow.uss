@@ -1,0 +1,85 @@
+.function-item {
+    flex-direction: row;
+    height: 30px;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.function-item:hover {
+    background-color: rgb(45, 45, 45);
+}
+
+.function-item--selected {
+    background-color: var(--unity-colors-highlight-background);
+}
+
+.function-item--selected:hover {
+    background-color: var(--unity-colors-highlight-background);
+}
+
+.function-item__icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.function-item--color-palette .function-item__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Networking/Editor/UI/Icons/d_Palette.png?fileID=2800000&guid=d47f5dab82fb84940ab63c8a6334a39c&type=3#d_Palette');
+}
+
+.function-item--scripter .function-item__icon {
+    background-image: resource('icons/processed/d_assembly icon.asset');
+}
+
+.function-item--ai-settings .function-item__icon {
+    background-image: resource('icons/d_settings.png');
+}
+
+.function-item--skybox-generator .function-item__icon {
+    background-image: resource('icons/d_prematsphere.png');
+}
+
+.ai-function-header {
+    flex-shrink: 0;
+}
+
+.ai-function-header__title {
+    font-size: var(--unity-metrics-default-font_very_big_size);
+    -unity-text-align: middle-center;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    -unity-font-style: bold;
+    flex-shrink: 0;
+}
+
+.ai-function-container {
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 150px;
+    flex-grow: 1;
+}
+
+.unity-two-pane-split-view__dragline-anchor {
+    background-color: var(--unity-colors-default-border);
+}
+
+.ai-function-panel__missing-key {
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.ai-function-panel__missing-key-label {
+    max-width: 350px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.ai-function-panel__missing-key-icon {
+    background-image: resource("icons/overlays/locked.png");
+    width: 32px;
+    height: 32px;
+}

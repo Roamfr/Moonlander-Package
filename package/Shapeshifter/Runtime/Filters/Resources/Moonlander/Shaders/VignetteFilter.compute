@@ -1,0 +1,32 @@
+#pragma kernel CSMain
+
+RWTexture2D<float4> Result;
+int Width;
+int Height;
+float Radius;
+float Sharpness;
+float Shape;
+float Brightness;
+float Opacity;
+bool Invert;
+
+[numthreads(8,8,1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    float2 uv = id.xy / float2(Width, Height);
+    float2 center = float2(0.5, 0.5);
+    float distSquare = max(abs(uv.x - center.x), abs(uv.y - center.y));
+    float distRound = distance(uv, center);
+    float dist = lerp(distSquare, distRound, Shape);
+    float invertedSharpness = 1.0 - Sharpness;
+    float vignette = 1.0 - smoothstep(0.5 - 0.5 * invertedSharpness, 0.5 + 0.5 * invertedSharpness, dist / Radius);
+    
+    float4 color = Result[id.xy];
+    if (!Invert)
+        vignette = 1.0 - vignette;
+    
+    float4 vignetteColor = float4(Brightness * vignette, Brightness * vignette, Brightness * vignette, 1.0);
+    color.rgb = lerp(color.rgb, vignetteColor.rgb, vignette * Opacity);
+    
+    Result[id.xy] = color;
+}

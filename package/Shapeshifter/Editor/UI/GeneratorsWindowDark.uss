@@ -1,0 +1,32 @@
+.create-generator-menu__add {
+    background-image: resource('icons/d_createaddnew.png');
+}
+
+.create-stack-preset-button__icon {
+    background-image: resource('icons/d_preset.context.png');
+}
+
+.auto-update-toggle__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/d_AutoUpdateGeneration Off.png?fileID=2800000&guid=8d7f0fb343d80434e91bcd373e6d4f4a&type=3#d_AutoUpdateGeneration Off');
+}
+
+.auto-update-toggle:checked .auto-update-toggle__icon {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/d_AutoUpdateGeneration On.png?fileID=2800000&guid=d9b10757f6af50943bdc4b3d3bc1bc4a&type=3#d_AutoUpdateGeneration On');
+}
+
+
+.moonlander-header-foldout__header-container {
+    background-color: rgb(48, 48,48);
+}
+
+.generator-item__status--missing-dependencies {
+    background-image: resource("icons/d_console.warnicon.png");
+}
+
+.generator-item__status--dirty {
+    background-image: resource("icons/d_rotatetool.png");
+}
+
+.generator-item__status--all-good {
+    background-image: resource("icons/packagemanager/dark/installed.png");
+}

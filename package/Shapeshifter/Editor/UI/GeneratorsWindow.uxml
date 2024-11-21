@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/GeneratorsWindow.uss?fileID=7433441132597879392&amp;guid=011996065c31d464db8d8ee7f7f564aa&amp;type=3#GeneratorsWindow" />
+    <uie:Toolbar>
+        <uie:ToolbarButton display-tooltip-when-elided="true" name="add-generator" class="create-generator-menu">
+            <ui:VisualElement class="create-generator-menu__add" />
+            <ui:VisualElement class="unity-toolbar-menu__arrow" />
+        </uie:ToolbarButton>
+        <ui:VisualElement class="moonlander-spacer" />
+        <Moonlander.Core.Editor.ToolbarToggleDropdown focusable="false" text="Auto-update" tooltip="Whether to automatically regenerate the generated area to reflect changes to the generators." name="auto-update" class="auto-update-toggle" />
+        <uie:ToolbarButton tooltip="Create a preset asset from the generator stack that can be reused in other scenes. Does not affect the current generators." name="create-preset" class="create-stack-preset-button">
+            <ui:VisualElement class="create-stack-preset-button__icon" />
+        </uie:ToolbarButton>
+    </uie:Toolbar>
+    <ui:ScrollView style="flex-grow: 1;" class="generators-scroll-view">
+        <Moonlander.Core.Editor.GeneratorGroup text="Global" class="global-generators-group" />
+        <Moonlander.Core.Editor.GeneratorGroup text="Bounds" class="generators-group" />
+    </ui:ScrollView>
+</ui:UXML>

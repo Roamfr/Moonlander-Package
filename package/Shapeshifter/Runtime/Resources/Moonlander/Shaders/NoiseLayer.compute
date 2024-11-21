@@ -1,0 +1,80 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+#include "FastNoiseLite.hlsl"
+
+RWTexture2D<float4> Result;
+float2 SampleArea;
+float2 TextureSize;
+
+// General.
+int Seed;
+int NoiseType;
+float Frequency;
+float2 Offset;
+
+// Fractal.
+int FractalType;
+int Octaves;
+float Lacunarity;
+float Gain;
+
+// Cellular.
+int CellularDistanceFunction;
+int CellularReturnType;
+float CellularJitter;
+
+// Domain warp.
+int DomainWarpType;
+float DomainWarpAmplitude;
+float DomainWarpFrequency;
+
+// Domain warp fractal.
+int FractalDomainWarpType;
+int FractalDomainWarpOctaves;
+float FractalDomainWarpLacunarity;
+
+#define FREQUENCY_SCALE 1000 // We scale the values because the numbers are too small for the interface.
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    fnl_state state = fnlCreateState(Seed);
+    state.noise_type = NoiseType;
+    state.frequency = Frequency / FREQUENCY_SCALE;
+   
+    state.fractal_type = FractalType;
+    state.octaves = Octaves;
+    state.lacunarity = Lacunarity;
+    state.gain = Gain;
+
+    state.cellular_distance_func = CellularDistanceFunction;
+    state.cellular_return_type = CellularReturnType;
+    state.cellular_jitter_mod = CellularJitter;
+
+    float2 samplePos = id.xy / TextureSize * SampleArea;
+
+    float x = samplePos.x + Offset.x;
+    float y = samplePos.y + Offset.y;
+
+    if (DomainWarpType >= 0)
+    {
+        fnl_state warpState = fnlCreateState(Seed);
+        warpState.domain_warp_type = DomainWarpType;
+        warpState.domain_warp_amp = DomainWarpAmplitude;
+        warpState.frequency = DomainWarpFrequency / FREQUENCY_SCALE;
+
+        warpState.fractal_type = FractalDomainWarpType;
+        warpState.octaves = FractalDomainWarpOctaves;
+        warpState.lacunarity = FractalDomainWarpLacunarity;
+        
+        fnlDomainWarp2D(warpState, x, y);   
+    }
+    
+    float value =  fnlGetNoise2D(state, x, y);
+
+    // Noise is returned in a -1 - 1 range, so we remap it to 0 - 1 range for use in textures.
+    value = (value + 1) / 2.0;
+
+    Result[id.xy] = float4(value, value, value, 1.0);
+}

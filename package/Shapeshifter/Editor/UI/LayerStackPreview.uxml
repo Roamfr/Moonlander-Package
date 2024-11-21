@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/LayerStackPreview.uss?fileID=7433441132597879392&amp;guid=f2649e30de9140f4b8142e1f28664202&amp;type=3#LayerStackPreview" />
+    <uie:Toolbar>
+        <ui:Label tabindex="-1" text="Preview" display-tooltip-when-elided="true" class="moonlander-layer-stack-preview__header-label" />
+        <uie:ToolbarToggle focusable="false" name="split" class="moonlander-layer-stack-preview__split-toggle" />
+        <uie:ToolbarToggle focusable="false" name="normal" class="moonlander-layer-stack-preview__normal-toggle"/>
+<!--        <uie:ToolbarToggle focusable="false" name="global" class="moonlander-layer-stack-preview__global-toggle"/>-->
+<!--        <ui:Vector2Field name="position" class="moonlander-layer-stack-preview__position" />-->
+    </uie:Toolbar>
+    <ui:VisualElement name="preview-container" class="moonlander-layer-stack-preview__container">
+        <ui:VisualElement class="moonlander-layer-stack-preview__split">
+            <ui:VisualElement class="moonlander-layer-stack-preview__preview-container">
+                <ui:VisualElement class="moonlander-layer-stack-preview__preview-item">
+                    <ui:Image name="preview" class="moonlander-layer-stack-preview__preview moonlander-layer-stack-preview__stack-preview" />
+                    <ui:Label tabindex="-1" text="Full Layer Stack" display-tooltip-when-elided="true" class="moonlander-layer-stack-preview__preview-target" />
+                </ui:VisualElement>
+                <ui:VisualElement class="moonlander-layer-stack-preview__preview-item">
+                    <ui:Image name="preview" class="moonlander-layer-stack-preview__preview moonlander-layer-stack-preview__layer-preview" />
+                    <ui:Label tabindex="-1" text="Single Layer" display-tooltip-when-elided="true" class="moonlander-layer-stack-preview__preview-target moonlander-layer-stack-preview__layer-preview-label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Vector2Field name="size" tooltip="The size of the preview to show" x="64" y="64" class="moonlander-layer-stack-preview__size" />
+    </ui:VisualElement>
+</ui:UXML>

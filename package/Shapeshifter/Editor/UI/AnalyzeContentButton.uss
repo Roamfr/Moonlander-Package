@@ -1,0 +1,29 @@
+.moonlander-analyze-content__analyze-container {
+    height: 24px;
+    margin-top: 10px;
+}
+
+.moonlander-analyze-content__analyze-button {
+    margin-right: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.moonlander-analyze-content__analyze-types-field > .unity-base-field__input {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left-width: 0;
+}
+
+.moonlander-analyze-content__analyze-types-field {
+    margin-left: 0;
+    width: 100px;
+}
+
+.moonlander-analyze-content__auto-tag-usage {
+    -unity-text-align: middle-center;
+    align-self: center;
+    opacity: 0.5;
+}

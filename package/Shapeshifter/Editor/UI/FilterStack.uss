@@ -1,0 +1,68 @@
+.moonlander-filter-stack__body-content {
+    background-color: #2A2A2A;
+    padding: 10px;
+}
+
+.moonlander-filter-stack__header-content {
+    flex-direction: row;
+}
+
+.moonlander-filter-stack__foldout-header .moonlander-header-foldout__header-container {
+    flex-direction: row;
+}
+
+.moonlander-filter-stack .moonlander-filter {
+    background-color: #383838;
+    border-width: 1px;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.moonlander-filter-stack .moonlander-filter:hover .moonlander-header-foldout__header-container {
+    background-color: #424242;
+}
+
+.moonlander-filter-stack .moonlander-filter .moonlander-header-foldout__content {
+    padding: 5px;
+    padding-left: 15px;
+    border-top-width: 1px;
+    border-color: #2A2A2A;
+}
+
+.moonlander-filter-stack .moonlander-filter .moonlander-header-foldout__header-container {
+    height: 24px;
+    align-items: center;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.moonlander-filter-stack--selected-item .moonlander-filter {
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: var(--unity-colors-button-background-pressed);
+}
+
+.moonlander-filter-stack--selected-item .moonlander-filter .moonlander-header-foldout__header-container {
+    background-color: #424242;
+}
+
+.moonlander-filter-stack--selected-item .moonlander-filter:hover .moonlander-header-foldout__header-container {
+    background-color: #464646;
+}
+
+.moonlander-drag-bar {
+    height: 2px;
+    background-color: var(--unity-colors-highlight-background);
+}
+
+.moonlander-filter-stack__filters {
+    margin-bottom: 5px;
+    flex-direction: column-reverse;
+}
+
+.moonlander-filter-stack__add-filter {
+    height: 24px;
+    margin-left: 0px;
+    margin-right: 0px;
+}

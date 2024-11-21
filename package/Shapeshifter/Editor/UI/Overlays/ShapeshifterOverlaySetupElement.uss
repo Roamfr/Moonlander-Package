@@ -1,0 +1,48 @@
+.shapeshifter-overlay-setup__seed-field > .unity-base-field__label {
+    width: 65px;
+    min-width: auto;
+}
+
+.shapeshifter-overlay-setup__library-field {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.shapeshifter-overlay-setup__library-field > .unity-base-field__label {
+    width: 65px;
+    min-width: auto;
+}
+
+.shapeshifter-overlay-setup__randomize-seed {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/d_Shuffle.png?fileID=2800000&guid=fa85f2ac555b96e4e84aa84daead5853&type=3#d_Shuffle');
+}
+
+.shapeshifter-overlay-setup__seed-container {
+    flex-direction: row;
+}
+
+.shapeshifter-overlay-setup__seed-field {
+    flex-grow: 1;
+}
+
+.shapeshifter-overlay-setup__randomize-seed {
+    width: 16px;
+    height: 16px;
+}
+
+.shapeshifter-overlay-setup__randomize-seed:hover {
+    background-color: var(--unity-colors-highlight-background-hover);
+}
+
+.shapeshifter-overlay-setup__budget-container {
+    flex-direction: row;
+}
+
+.shapeshifter-overlay-setup__use-budget-field .unity-base-field__label {
+    width: 65px;
+    min-width: auto;
+}
+
+.shapeshifter-overlay-setup__budget-field {
+    flex-grow: 1;
+}

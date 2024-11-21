@@ -1,0 +1,1345 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.16862746, g: 0.16470589, b: 0.18431373, a: 0.2}
+  m_FogMode: 3
+  m_FogDensity: 0.004
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 765903731}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.26140532, g: 0.21570545, b: 0.24397507, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!114 &406940640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -945914773, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: Trees
+  m_EditorClassIdentifier: 
+  _id: 149
+  _enabled: 1
+  _contentPool:
+    _enabled: 1
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 3dAssets
+      _loadAmount: 3
+      _resultType: 1
+      _queries:
+      - rid: 802341454505312263
+  _placeables:
+  - {fileID: 1611100632286679858, guid: b7bda434a1fc7bc4080e15070067f1d2, type: 3}
+  - {fileID: 6284545499463808127, guid: 9589835dff4ec8e44ab17a19a658fbc9, type: 3}
+  - {fileID: 6944087748347431704, guid: 6a66b50417b1b894ea729627e48ffb26, type: 3}
+  _generationType: 0
+  _densityLayers:
+    _layers: []
+  _spacing: 2.35
+  _density: 1
+  _chaos: 1
+  _outputName: Trees
+  _useTerrainDataAsHeightInput: 1
+  _heightmapLayers:
+    _layers: []
+  _terrainMaxHeight: 0
+  _offsetSpace: 1
+  _offset: {x: 0, y: -0.05, z: 0}
+  _useFlowMapData: 0
+  _orientationLayers:
+    _layers: []
+  _rotationXRange:
+    _min: 0
+    _max: 0
+  _rotationYRange:
+    _min: 0
+    _max: 360
+  _rotationZRange:
+    _min: 0
+    _max: 0
+  _scaleLayers:
+    _layers: []
+  _scaleRange:
+    _min: 1
+    _max: 1.5
+  _enableConformToTerrain: 0
+  _enableTerrainBlending: 0
+  _terrainBlendHeight: 0
+  _terrainBlend: 0.3
+  _drawDistance: 500
+  _shadowCastingMode: 1
+  _enableCollision: 0
+  _collisionMode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 802341454505312263
+      type: {class: FuzzyTagQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        _positiveTags:
+        - pine tree
+        - birch Tree
+        _negativeTags: []
+        _minimumMatchingScore: 50
+--- !u!1 &644407300
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 644407302}
+  - component: {fileID: 644407301}
+  m_Layer: 0
+  m_Name: Moonlander.Core.GeneratedSceneData (Singleton)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &644407301
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644407300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1288652674, guid: b16bdd9ac385d244c9b2e6f023027396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _spawnController:
+    _useSpacePartitioning: 1
+    _generatedObjects:
+      _list: []
+      _subLists:
+        _pairs: []
+    _gpuMeshRenderers:
+      _pairs: []
+  _registryManager:
+    _registries: []
+  references:
+    version: 2
+    RefIds: []
+--- !u!4 &644407302
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644407300}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &695301788
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 695301790}
+  - component: {fileID: 695301789}
+  m_Layer: 0
+  m_Name: Moonlander.Core.SceneGenerationManager (Singleton)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &695301789
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695301788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1535722317, guid: b16bdd9ac385d244c9b2e6f023027396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _idAutoIncrement: 236
+  _seed: -6484272529194001657
+  _synthesizer:
+    _dna:
+      s: -1
+      l: 
+      g: []
+  _generationManager:
+    _registryDependencyManager:
+      _dependencies: []
+    _generatorStack:
+      _globalGenerators:
+      - {fileID: 1501436270}
+      _generators:
+      - {fileID: 1513250490}
+      - {fileID: 406940640}
+      - {fileID: 1347303645}
+      - {fileID: 1038267551}
+      - {fileID: 2009515785}
+    _library: {fileID: 11400000, guid: b4ae43af6b7e82246b74472ffc7db6b4, type: 2}
+    _generationArea:
+      _bounds: []
+    _hasInitialized: 0
+--- !u!4 &695301790
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695301788}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &765903731
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: belfast_sunset_puresky_4k
+  m_Shader: {fileID: 108, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _MAPPING_LATITUDE_LONGITUDE_LAYOUT
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BackTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DownTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FrontTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LeftTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 66fb3ec2a512a9640a2dd459a6c9f2fb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RightTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex:
+        m_Texture: {fileID: 8900000, guid: 66fb3ec2a512a9640a2dd459a6c9f2fb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UpTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 1
+    - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
+    - _Cull: 2
+    - _Cutoff: 0.5
+    - _DetailAlbedoMapScale: 1
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 0
+    - _DstBlendAlpha: 0
+    - _EnvironmentReflections: 1
+    - _Exposure: 0.5
+    - _GlossMapScale: 0
+    - _Glossiness: 0
+    - _GlossyReflections: 0
+    - _ImageType: 0
+    - _Layout: 0
+    - _Mapping: 1
+    - _Metallic: 0
+    - _MirrorOnBack: 0
+    - _OcclusionStrength: 1
+    - _Parallax: 0.005
+    - _QueueOffset: 0
+    - _ReceiveShadows: 1
+    - _Rotation: 340
+    - _Smoothness: 0.5
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _Surface: 0
+    - _WorkflowMode: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+  m_BuildTextureStacks: []
+--- !u!1 &1011033622
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011033624}
+  - component: {fileID: 1011033623}
+  m_Layer: 0
+  m_Name: Moonlander.Core.GenerationState (Singleton)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1011033623
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011033622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1520396711, guid: b16bdd9ac385d244c9b2e6f023027396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dirtyObjects: []
+--- !u!4 &1011033624
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011033622}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1038267551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -945914773, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: Grass
+  m_EditorClassIdentifier: 
+  _id: 158
+  _enabled: 1
+  _contentPool:
+    _enabled: 1
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 3dAssets
+      _loadAmount: 2
+      _resultType: 1
+      _queries:
+      - rid: 802341454505312262
+  _placeables:
+  - {fileID: 1813500694321031247, guid: 263ef45e72d5fec47b46af03988ce5b3, type: 3}
+  - {fileID: 4125082435132053695, guid: 6d2433d36f113ce49b88d7211041e2fb, type: 3}
+  _generationType: 0
+  _densityLayers:
+    _layers: []
+  _spacing: 0.63
+  _density: 1
+  _chaos: 1
+  _outputName: 
+  _useTerrainDataAsHeightInput: 1
+  _heightmapLayers:
+    _layers: []
+  _terrainMaxHeight: 0
+  _offsetSpace: 1
+  _offset: {x: 0, y: 0, z: 0}
+  _useFlowMapData: 0
+  _orientationLayers:
+    _layers:
+    - rid: 802341454505312264
+  _rotationXRange:
+    _min: 0
+    _max: 0
+  _rotationYRange:
+    _min: 0
+    _max: 360
+  _rotationZRange:
+    _min: 0
+    _max: 0
+  _scaleLayers:
+    _layers: []
+  _scaleRange:
+    _min: 0.9
+    _max: 1.25
+  _enableConformToTerrain: 0
+  _enableTerrainBlending: 1
+  _terrainBlendHeight: 0
+  _terrainBlend: 0.3
+  _drawDistance: 500
+  _shadowCastingMode: 0
+  _enableCollision: 0
+  _collisionMode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 802341454505312262
+      type: {class: FuzzyTagQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        _positiveTags:
+        - grass
+        _negativeTags: []
+        _minimumMatchingScore: 0
+    - rid: 802341454505312264
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 802341454505312266
+    - rid: 802341454505312266
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+--- !u!1 &1239756302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1239756304}
+  - component: {fileID: 1239756303}
+  m_Layer: 0
+  m_Name: '[Sample] Particle Placer'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1239756303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239756302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94cbef478f617304dac22dcdcc636889, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particlePrefab: {fileID: 1067621556811028107, guid: 4743f8d215e607b4d9b21376b51390a3,
+    type: 3}
+  _radius: 3
+  _objectsRegistry:
+    _registryName: Trees
+--- !u!4 &1239756304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239756302}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1347303645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -945914773, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: Rocks
+  m_EditorClassIdentifier: 
+  _id: 153
+  _enabled: 1
+  _contentPool:
+    _enabled: 1
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 3dAssets
+      _loadAmount: 4
+      _resultType: 1
+      _queries:
+      - rid: 802341454505312272
+  _placeables:
+  - {fileID: 8108557973878142078, guid: 320b2b00687f3a84ab8a4bf95639fe6d, type: 3}
+  - {fileID: 8220023353365170791, guid: 14dc9d2415a85814aae6927064849087, type: 3}
+  - {fileID: 6329180000068865190, guid: 00dcceeee41bde0448c170340253be16, type: 3}
+  - {fileID: 5856570701762836285, guid: b13b57322243c5545be2249da8e0d822, type: 3}
+  _generationType: 0
+  _densityLayers:
+    _layers: []
+  _spacing: 5
+  _density: 0.75
+  _chaos: 1
+  _outputName: 
+  _useTerrainDataAsHeightInput: 1
+  _heightmapLayers:
+    _layers: []
+  _terrainMaxHeight: 0
+  _offsetSpace: 1
+  _offset: {x: 0, y: 0, z: 0}
+  _useFlowMapData: 0
+  _orientationLayers:
+    _layers: []
+  _rotationXRange:
+    _min: 0
+    _max: 0
+  _rotationYRange:
+    _min: 0
+    _max: 360
+  _rotationZRange:
+    _min: 0
+    _max: 0
+  _scaleLayers:
+    _layers: []
+  _scaleRange:
+    _min: 0.75
+    _max: 1.25
+  _enableConformToTerrain: 1
+  _enableTerrainBlending: 0
+  _terrainBlendHeight: 0
+  _terrainBlend: 0.3
+  _drawDistance: 500
+  _shadowCastingMode: 1
+  _enableCollision: 0
+  _collisionMode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 802341454505312272
+      type: {class: ExactTagQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        _positiveTags:
+        - rock
+        _negativeTags: []
+--- !u!1 &1451201637
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451201639}
+  - component: {fileID: 1451201638}
+  m_Layer: 0
+  m_Name: Realtime Reflection Probe
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!215 &1451201638
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451201637}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 1
+  m_RefreshMode: 2
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 100000, y: 100000, z: 100000}
+  m_BoxOffset: {x: 0, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 0
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 1
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!4 &1451201639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451201637}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1501436270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1823148588, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: Height Map
+  m_EditorClassIdentifier: 
+  _id: 147
+  _enabled: 1
+  _contentPool:
+    _enabled: 0
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 
+      _loadAmount: 1
+      _resultType: 1
+      _queries: []
+  _layers:
+    _layers:
+    - rid: 802341454505312269
+  _output: HeightMap
+  references:
+    version: 2
+    RefIds:
+    - rid: 802341454505312269
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 802341454505312270
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 44.2
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 802341454505312270
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0
+        _inputMid: 0.5
+        _inputHigh: 1
+        _outputLow: 0
+        _outputHigh: 0.32
+--- !u!114 &1513250490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2049758169, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: Terrain
+  m_EditorClassIdentifier: 
+  _id: 148
+  _enabled: 1
+  _contentPool:
+    _enabled: 0
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 
+      _loadAmount: 1
+      _resultType: 1
+      _queries: []
+  _terrainLayerData:
+  - _name: 
+    _enabled: 1
+    _terrainTextureAsset: {fileID: 11400000, guid: 4ffffa669be99274b9cec710e721fcca,
+      type: 2}
+    _colorTint: {r: 1, g: 1, b: 1, a: 1}
+    _mask:
+      _layers:
+      - rid: 802341454505312271
+  _doHeightBlend: 1
+  _heightLayers:
+    _layers:
+    - rid: 802341454505312257
+  _maxTerrainHeight: 15
+  _terrainHeightmapResolution: 257
+  _terrainSplatmapResolution: 256
+  _terrainBasemapBlend: 0.5
+  _terrainBasemapResolution: 128
+  references:
+    version: 2
+    RefIds:
+    - rid: 802341454505312257
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 802341454505312259
+    - rid: 802341454505312259
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 802341454505312271
+      type: {class: UniformLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: UniformLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _value: 1
+--- !u!1 &1718364254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1718364257}
+  - component: {fileID: 1718364256}
+  - component: {fileID: 1718364255}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1718364255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718364254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+--- !u!108 &1718364256
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718364254}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 1
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.9947714
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 0.75
+    m_Bias: 0.05
+    m_NormalBias: 0.05
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &1718364257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718364254}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.06952106, y: -0.92310387, z: 0.19986539, w: -0.32109186}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1870239807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1870239810}
+  - component: {fileID: 1870239809}
+  - component: {fileID: 1870239808}
+  - component: {fileID: 1870239811}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1870239808
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870239807}
+  m_Enabled: 1
+--- !u!20 &1870239809
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870239807}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1870239810
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870239807}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.2164396, y: 0, z: 0, w: 0.97629607}
+  m_LocalPosition: {x: 0, y: 15, z: -30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
+--- !u!114 &1870239811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870239807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
+--- !u!114 &2009515785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -945914773, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: Flower Patches
+  m_EditorClassIdentifier: 
+  _id: 161
+  _enabled: 1
+  _contentPool:
+    _enabled: 1
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 3dAssets
+      _loadAmount: 3
+      _resultType: 1
+      _queries:
+      - rid: 802341454505312262
+  _placeables:
+  - {fileID: 7687582691651037632, guid: ae9bd94f44e60914e9162a1eee79502a, type: 3}
+  - {fileID: 1874427477605888385, guid: f5fdddf88757673438667cc12fc979aa, type: 3}
+  - {fileID: 1578238232135070617, guid: 483ddb372519e8a4f9f5008078465629, type: 3}
+  _generationType: 0
+  _densityLayers:
+    _layers:
+    - rid: 802341454505312267
+  _spacing: 0.59
+  _density: 0.785
+  _chaos: 1
+  _outputName: 
+  _useTerrainDataAsHeightInput: 1
+  _heightmapLayers:
+    _layers: []
+  _terrainMaxHeight: 0
+  _offsetSpace: 1
+  _offset: {x: 0, y: 0, z: 0}
+  _useFlowMapData: 0
+  _orientationLayers:
+    _layers:
+    - rid: 802341454505312264
+  _rotationXRange:
+    _min: 0
+    _max: 0
+  _rotationYRange:
+    _min: 0
+    _max: 360
+  _rotationZRange:
+    _min: 0
+    _max: 0
+  _scaleLayers:
+    _layers: []
+  _scaleRange:
+    _min: 1
+    _max: 1.5
+  _enableConformToTerrain: 0
+  _enableTerrainBlending: 0
+  _terrainBlendHeight: 0
+  _terrainBlend: 0.3
+  _drawDistance: 500
+  _shadowCastingMode: 0
+  _enableCollision: 0
+  _collisionMode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 802341454505312262
+      type: {class: FuzzyTagQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        _positiveTags:
+        - flower
+        _negativeTags: []
+        _minimumMatchingScore: 0
+    - rid: 802341454505312264
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 802341454505312266
+    - rid: 802341454505312266
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 802341454505312267
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 802341454505312268
+        _type: 3
+        _offset: {x: 0, y: 0}
+        _frequency: 218.3
+        _fractalData:
+          type: 0
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 802341454505312268
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.37
+        _inputMid: 0
+        _inputHigh: 0.63
+        _outputLow: 0
+        _outputHigh: 1
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 695301790}
+  - {fileID: 1870239810}
+  - {fileID: 644407302}
+  - {fileID: 1239756304}
+  - {fileID: 1011033624}
+  - {fileID: 1718364257}
+  - {fileID: 1451201639}

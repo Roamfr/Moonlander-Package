@@ -1,0 +1,8 @@
+.moonlander-noise-layer__section {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.moonlander-noise-layer__section .unity-base-field__label {
+    min-width: 105px;
+}

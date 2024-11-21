@@ -1,0 +1,5 @@
+.ai-toolkit__output {
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+}

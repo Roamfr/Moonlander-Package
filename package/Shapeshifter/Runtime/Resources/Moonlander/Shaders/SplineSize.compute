@@ -1,0 +1,61 @@
+#pragma kernel CSMain
+
+#include "Packages/com.unity.splines/Shader/Spline.cginc"
+#include "CubicBezierSplineDistance.hlsl"
+
+RWTexture2D<float4> Result;
+int2 ResultSize;
+
+float2 StartKnot, StartControl, EndKnot, EndControl;
+
+float dlinesegment(in float2 x, in float2 p1, in float2 p2)
+{
+    float2 da = p2-p1;
+    return length(x-lerp(p1, p2, clamp(dot(x-p1, da)/dot(da,da),0.,1.)));
+}
+
+// paint with antialiasing
+float sm(in float d)
+{
+    return smoothstep(1.5/ResultSize.y, -1.5/ResultSize.y, d);
+}
+
+[numthreads(8,8,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    float2 uv = id.xy / ResultSize;
+
+    float2 p0 = float2(0.5, 0);
+    float2 p1 = float2(0.5, 0.5);
+    float2 p2 = float2(0.5, 1.0);
+    float2 p3 = float2(0.5, 0.5);
+    
+    
+    float dist = abs(CubicSplineDistance(uv, p0, p1, p2, p3)) - 0.1;
+    
+    // Draw distance isolines
+    float interval = clamp(.03 * (dist - (dist % .025)) / 0.025, 0.0, 1.0);
+    float3 col = lerp(float3(1.00, 0.90, 0.68), float3(0.98, 0.64,0.67), 2.0 * interval);
+    if(interval > 0.5)
+        col = lerp(col, float3(0.54,0.80,0.80), 2.0 * (interval - 0.5));
+    
+    // Draw handle lines
+    col = lerp(col, c.yyx, sm(abs(dlinesegment(uv,p0,p1))-.002));
+    col = lerp(col, c.yyx, sm(abs(dlinesegment(uv,p2,p3))-.002));
+    
+    // Draw bezier curve
+    col = lerp(col, c.yyy, sm(dist));
+    
+    // Draw control points
+    col = lerp(col, .4*c.xxx, sm(abs((dist +.0125 % 0.025)-.0125)-.001));
+    col = lerp(col, c.xxx, sm(length(uv - p0)-.015));
+    col = lerp(col, c.yyy, sm(abs(length(uv - p0)-.015)-.002));
+    col = lerp(col, c.xxx, sm(length(uv-p1)-.015));
+    col = lerp(col, c.yyy, sm(abs(length(uv-p1)-.015)-.002));
+    col = lerp(col, c.xxx, sm(length(uv-p2)-.015));
+    col = lerp(col, c.yyy, sm(abs(length(uv-p2)-.015)-.002));
+    col = lerp(col, c.xxx, sm(length(uv-p3)-.015));
+    col = lerp(col, c.yyy, sm(abs(length(uv-p3)-.015)-.002));
+    
+    Result[id.xy] = float4(col,1.0);
+}

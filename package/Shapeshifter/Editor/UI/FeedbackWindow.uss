@@ -1,0 +1,122 @@
+.feedback-field-label {
+    margin-left: 2px;
+    padding-bottom: 2px;
+}
+
+.feedback-description {
+    height: 150px;
+    white-space: normal;
+}
+
+.unity-text-field {
+    margin-bottom: 20px;
+    flex-shrink: 1;
+}
+
+.feedback-logo {
+    -unity-background-scale-mode: scale-to-fit;
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/MoonlanderLogo.png?fileID=2800000&guid=53a1f5845af7c8e43ab8c2ab1d238304&type=3#MoonlanderLogo');
+    flex-grow: 1;
+    max-height: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.feedback-title {
+}
+
+.unity-radio-button-group__container {
+    flex-direction: row;
+}
+
+.unity-radio-button__checkmark-background {
+    display: none;
+}
+
+.unity-radio-button-group {
+    flex-direction: column;
+    align-items: center;
+}
+
+.unity-radio-button-group > .unity-base-field__input {
+    margin-top: 10px;
+    overflow: visible;
+}
+
+.unity-radio-button {
+    width: 64px;
+    height: 64px;
+    opacity: 0.65;
+}
+
+.unity-radio-button:checked {
+    opacity: 1;
+    margin-top: -8px;
+}
+.unity-radio-button:checked:hover {
+    opacity: 0.9;
+}
+
+.unity-radio-button:hover {
+    opacity: 0.8;
+}
+
+.feedback-form__info {
+    visibility: hidden;
+}
+
+.feedback-mood__very-satisfied {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/verySatisfied.png?fileID=2800000&guid=07503503565c9d44c9f1b7949c473ed7&type=3#verySatisfied');
+}
+
+.feedback-mood__satisfied {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/satisfied.png?fileID=2800000&guid=9f931a866302df04993949257d387c10&type=3#satisfied');
+}
+
+.feedback-mood__neutral {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/nutral.png?fileID=2800000&guid=b389ff90455dfaf40a539e57dd488148&type=3#nutral');
+}
+
+.feedback-mood__dissatisfied {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/dissatisfied.png?fileID=2800000&guid=667072dc92fa2bc4086ad98dc85a525b&type=3#dissatisfied');
+}
+
+.moonlander-spinner {
+    width: 16px;
+    height: 16px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.feedback-submitted__body {
+    white-space: normal;
+    -unity-text-align: upper-center;
+    max-width: 400px;
+}
+
+.feedback-submitted__send-more {
+    margin-top: 20px;
+    width: 250px;
+    height: 30px;
+}
+
+.feedback-submitted__title {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.feedback-submitted {
+    align-items: center;
+}
+
+.feedback-form__submit {
+    height: 30px;
+    width: 250px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.feedback-form {
+}

@@ -1,0 +1,26 @@
+.moonlander-missing-license {
+    justify-content: center;
+    align-items: center;
+}
+
+.moonlander-missing-license__lock-icon {
+    width: 16px;
+    height: 16px;
+    background-image: resource('icons/overlays/locked.png');
+    flex-shrink: 0;
+}
+
+.moonlander-missing-license__prompt {
+    white-space: normal;
+    -unity-text-align: upper-center;
+}
+
+.moonlander-missing-license__content {
+    align-items: center;
+    flex-direction: row;
+}
+
+.moonlander-missing-license__open-window {
+    height: 30px;
+    width: 200px;
+}

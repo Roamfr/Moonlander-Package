@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" 
+         xmlns:uie="UnityEditor.UIElements"
+         xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         engine="UnityEngine.UIElements" 
+         editor="UnityEditor.UIElements" 
+         moonlander="Moonlander.Extensions.Editor" 
+         noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" 
+         editor-extension-mode="True">
+    
+    <ui:VisualElement class="messages-container">
+        <ui:ScrollView class="messages-content-container" />
+        <ui:VisualElement class="message-generating">
+            <ui:Label text="Generating response..." class="message-generating__label" />
+            <Moonlander.Extensions.Editor.Spinner />
+        </ui:VisualElement>
+        <ui:VisualElement class="empty-state">
+            <ui:Label text="Hey there, please describe the type of environment you want to create and I will try to give you a stack of generators that match!" class="empty-state__message" />
+            <ui:VisualElement class="empty-state__example-container">
+                <ui:Label class="empty-state__example" />
+                <ui:Label class="empty-state__example" />
+                <ui:Label class="empty-state__example" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement class="input-container">
+        <ui:VisualElement tooltip="Add the current generator stack to the message." class="attach-button">
+            <ui:VisualElement class="attach-button__icon" />
+        </ui:VisualElement>
+        <Moonlander.Extensions.Editor.EnhancedTextField placeholder-text="Write a generation request" class="input-container__input-field">
+            <ui:VisualElement tooltip="Send message" class="send-button">
+                <ui:VisualElement class="send-button__icon" />
+            </ui:VisualElement>
+        </Moonlander.Extensions.Editor.EnhancedTextField>
+    </ui:VisualElement>
+    
+</ui:UXML>

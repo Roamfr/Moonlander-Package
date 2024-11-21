@@ -1,0 +1,50 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Overlays/ShapeshifterOverlay.uss?fileID=7433441132597879392&amp;guid=420d839a90d7fdf4a83c56a52bb33005&amp;type=3#ShapeshifterOverlay" />
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Overlays/ShapeshifterOverlaySetupElement.uss?fileID=7433441132597879392&amp;guid=703bca60f9144f458405e0e1f9364836&amp;type=3#ShapeshifterOverlaySetupElement" />
+    <ui:VisualElement class="shapeshifter-overlay__generate-section">
+        <ui:Button text="Generate Area" display-tooltip-when-elided="true" class="shapeshifter-overlay__generate" />
+    </ui:VisualElement>
+    <ui:VisualElement class="shapeshifter-overlay__clear-section shapeshifter-overlay__section">
+        <ui:Button display-tooltip-when-elided="true" class="shapeshifter-overlay__clear-all">
+            <ui:VisualElement class="shapeshifter-overlay__icon" />
+            <ui:Label tabindex="-1" text="Clear All" display-tooltip-when-elided="true" />
+        </ui:Button>
+        <ui:Button display-tooltip-when-elided="true" class="shapeshifter-overlay__clear-area">
+            <ui:VisualElement class="shapeshifter-overlay__icon" />
+            <ui:Label tabindex="-1" text="Clear Area" display-tooltip-when-elided="true" />
+        </ui:Button>
+    </ui:VisualElement>
+    <ui:VisualElement class="shapeshifter-overlay__bounds-section shapeshifter-overlay__section">
+        <ui:VisualElement class="shapeshifter-overlay__bounds">
+            <ui:Foldout text="Generation Area" name="generation-area-toggle" />
+            <ui:Toggle tooltip="Whether to show the area in the SceneView that Shapeshifter will generate in" name="show-bounds" class="shapeshifter-overlay__show-bounds unity-button">
+                <ui:VisualElement class="shapeshifter-overlay__icon" />
+                <ui:Label tabindex="-1" text="Show Area" display-tooltip-when-elided="true" />
+            </ui:Toggle>
+            <ui:VisualElement tooltip="Additional actions for manipulating the generation area." name="bounds-options" class="shapeshifter-overlay__bounds-options" />
+        </ui:VisualElement>
+        <Moonlander.Core.Overlays.ShapeshifterBoundsField />
+    </ui:VisualElement>
+    <ui:VisualElement name="divider" class="shapeshifter-overlay__divider" />
+    
+    <ui:Foldout text="Setup" name="setup" class="shapeshifter-overlay__setup shapeshifter-overlay__section">
+        <Moonlander.Core.Overlays.ShapeshifterOverlaySetupElement />
+    </ui:Foldout>
+    
+    <ui:VisualElement name="divider" class="shapeshifter-overlay__divider" />
+    
+    <ui:VisualElement class="moonlander-button-strip shapeshifter-overlay__action-bar">
+        <ui:Button class="moonlander-button-strip__left shapeshifter-overlay__open-library">
+            <ui:VisualElement class="shapeshifter-overlay__icon" />
+            <ui:Label tabindex="-1" text="Library" display-tooltip-when-elided="true" />
+        </ui:Button>
+        <ui:Button class="moonlander-button-strip__middle shapeshifter-overlay__open-generators">
+            <ui:VisualElement class="shapeshifter-overlay__icon" />
+            <ui:Label tabindex="-1" text="Edit" display-tooltip-when-elided="true" />
+        </ui:Button>
+        <ui:Button class="moonlander-button-strip__right shapeshifter-overlay__open-copilot">
+            <ui:VisualElement class="shapeshifter-overlay__icon" />
+            <ui:Label tabindex="-1" text="Copilot" display-tooltip-when-elided="true" />
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

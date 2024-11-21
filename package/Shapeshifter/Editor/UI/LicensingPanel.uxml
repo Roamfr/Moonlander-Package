@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/LicensingPanel.uss?fileID=7433441132597879392&amp;guid=18eba8cda7ab5b54983113b3dc4a0f1b&amp;type=3#LicensingPanel" />
+    <ui:VisualElement style="margin-left: 20px; margin-right: 20px;">
+        <ui:Label text="License Info" class="text licensing__title" />
+        <ui:Label name="status-label" text="No valid license found" display-tooltip-when-elided="true" class="text licensing__status" />
+        <ui:VisualElement name="spacer" style="height: 2px; background-color: rgb(101, 101, 101); margin-top: 10px; margin-bottom: 10px; margin-left: 3px; margin-right: 3px; display: none;" />
+        <ui:Label name="instruction-label" text="Enter your activation key below and click Activate License" display-tooltip-when-elided="true" class="text" style="margin-left: 2px; margin-top: 5px; margin-bottom: 5px; margin-right: 3px; -unity-font-style: normal; -unity-text-align: upper-center; white-space: normal;" />
+        <ui:TextField picking-mode="Ignore" name="key-textfield" class="license-field" style="-unity-text-align: upper-center; height: 30px; margin-bottom: 5px;" />
+        <ui:Button name="activate-button" text="Activate License" display-tooltip-when-elided="true" enable-rich-text="false" class="editor-button text" style="height: 30px;" />
+        <ui:Button name="deactivate-button" text="Deactivate License" display-tooltip-when-elided="true" enable-rich-text="false" visible="false" class="editor-button text" style="height: 30px;" />
+        <ui:VisualElement style="align-items: center;">
+            <ui:Label text="Don&apos;t have a license yet?&#10;Sign up and get your key from &lt;u&gt;our website&lt;/u&gt;" display-tooltip-when-elided="false" class="text" style="margin-left: 3px; margin-top: 20px; margin-bottom: 2px; margin-right: 3px; -unity-text-align: upper-center;" />
+            <ui:Button display-tooltip-when-elided="true" name="website-link" style="position: absolute; flex-shrink: 1; flex-grow: 1; width: 70px; height: 18px; translate: 85px 0; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; bottom: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); background-color: rgba(88, 88, 88, 0);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,1 @@
+SemanticVersion by Ruhrpottpatriot cloned from: https://github.com/Ruhrpottpatriot/SemanticVersion

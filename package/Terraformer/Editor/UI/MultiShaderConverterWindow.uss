@@ -1,0 +1,26 @@
+.converter-drop-area {
+    height: 50px;
+    justify-content: center;
+    -unity-text-align: middle-center;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    white-space: normal;
+    background-color: var(--unity-colors-input_field-background);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: var(--unity-metrics-default-font_small_size);
+}
+
+.converter {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.converter-button {
+    margin-top: 10px;
+    height: 30px;
+}

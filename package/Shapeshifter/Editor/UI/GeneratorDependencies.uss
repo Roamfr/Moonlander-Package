@@ -1,0 +1,31 @@
+.dependencies-header {
+    -unity-font-style: bold;
+    margin-bottom: 5px;
+    padding-left: 3px;
+    flex-direction: row;
+}
+
+.dependencies-spacer {
+    height: 24px;
+}
+
+.dependency-cell {
+    padding-left: 8px;
+    -unity-text-align: middle-left;
+}
+
+.dependency-cell__status {
+    width: 16px;
+    height: 16px;
+    align-self: center;
+}
+
+.unity-multi-column-view__cell {
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.dependencies-header__icon {
+    width: 16px;
+    height: 16px;
+}

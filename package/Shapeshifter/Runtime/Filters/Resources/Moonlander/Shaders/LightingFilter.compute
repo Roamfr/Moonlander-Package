@@ -1,0 +1,39 @@
+#pragma kernel CSMain
+
+Texture2D<float4> Input;
+RWTexture2D<float4> Result;
+int Width;
+int Height;
+float XAxis; // Tilt
+float YAxis; // Direction
+
+SamplerState samplerInput;
+
+[numthreads(8,8,1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    float tiltRad = radians(XAxis); // Convert tilt from degrees to radians
+    float directionRad = radians(YAxis); // Convert direction from degrees to radians
+
+    float3 lightDirection = float3(cos(tiltRad) * cos(directionRad), cos(tiltRad) * sin(directionRad), sin(tiltRad));
+    lightDirection = normalize(lightDirection); // Normalize the light direction vector
+
+    float height = Input[id.xy].r;
+    float3 position = float3((int2)id.xy, height);
+
+    int steps = max(1, (int)(max(Width, Height)));
+
+    for (int i = 0; i < steps; i++)
+    {
+        position += lightDirection;
+        float currentHeight = Input.SampleLevel(samplerInput, float2(position.x / Width, position.y / Height), 0).r;
+
+        if (position.z < currentHeight)
+        {
+            Result[id.xy] = float4(0, 0, 0, 1);
+            return;
+        }
+    }
+
+    Result[id.xy] = float4(1, 1, 1, 1);
+}

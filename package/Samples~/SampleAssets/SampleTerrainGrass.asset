@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1359096377, guid: b1021be056875dc46b1055f8772a7c0b, type: 3}
+  m_Name: SampleTerrainGrass
+  m_EditorClassIdentifier: 
+  albedo: {fileID: 2800000, guid: ec849720dacca4f4e95a5b242e9679b5, type: 3}
+  normal: {fileID: 0}
+  mask: {fileID: 0}
+  normalScale: 1
+  tileSize: {x: 1, y: 1}
+  tileOffset: {x: 0, y: 0}

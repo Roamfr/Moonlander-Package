@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" ue="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Networking/Editor/UI/AIToolkit.uss?fileID=7433441132597879392&amp;guid=1a35c4884e5c2a44aba8af21584ea8f7&amp;type=3#AIToolkit" />
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Networking/Editor/UI/AISettingsPanel.uss?fileID=7433441132597879392&amp;guid=3b38fb9d982458748ab7b8bfaf611071&amp;type=3#AISettingsPanel" />
+    <ui:TextField label="OpenAI Key" password="true" class="ai-settings__open-ai-key" />
+    <ui:VisualElement class="ai-toolkit-spacer" />
+    <ui:TextField label="Blockade Labs Key" password="true" class="ai-settings__blockade-labs-key" />
+    <ui:VisualElement class="ai-toolkit-spacer" />
+    <ui:TextField label="Loci Key" password="true" name="TextField" class="ai-settings__loci-key" />
+    <ui:Button text="Save Settings" class="ai-settings__save" />
+</ui:UXML>

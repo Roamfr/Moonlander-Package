@@ -1,0 +1,654 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1003069395, guid: b16bdd9ac385d244c9b2e6f023027396, type: 3}
+  m_Name: RuntimeSampleLibrary
+  m_EditorClassIdentifier: 
+  _key: 
+  _properties:
+  - _name: 3dAssets
+    _references:
+      _references:
+      - _name: grass
+        _metadata:
+          _id: 809b450e-1f50-481c-95a2-5202e61c5d69
+          _description: 
+          _compatibility:
+            _tags:
+            - grass
+            - vegetation
+            - ground cover
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 132
+          _boundsSize: {x: 0.38107398, y: 0.25399998, z: 0.39218277}
+        _reference:
+          m_AssetGUID: 6d2433d36f113ce49b88d7211041e2fb
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: grass_large
+        _metadata:
+          _id: e557785d-6345-49f0-a0b1-b8c14e4fc7b2
+          _description: 
+          _compatibility:
+            _tags:
+            - grass
+            - vegetation
+            - ground cover
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 224
+          _boundsSize: {x: 0.4089979, y: 0.25399998, z: 0.40788895}
+        _reference:
+          m_AssetGUID: 263ef45e72d5fec47b46af03988ce5b3
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: tree_birchA
+        _metadata:
+          _id: 04def819-dbe0-4116-9549-7f887b0fd603
+          _description: 
+          _compatibility:
+            _tags:
+            - tree
+            - birch tree
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 52
+          _boundsSize: {x: 0.35463738, y: 1.519437, z: 0.40949994}
+        _reference:
+          m_AssetGUID: 53ab0e40c0b92c7419980ef1ab3de89f
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: tree_birchB
+        _metadata:
+          _id: 841a1e35-0b88-4bc7-9ec2-02a86d3b0a24
+          _description: 
+          _compatibility:
+            _tags:
+            - tree
+            - birch tree
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 162
+          _boundsSize: {x: 0.6804365, y: 1.4902979, z: 0.61652243}
+        _reference:
+          m_AssetGUID: 6a66b50417b1b894ea729627e48ffb26
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: tree_detailed_dark
+        _metadata:
+          _id: 1e5040b9-62d5-46ea-a596-ca7c0a12a9ce
+          _description: 
+          _compatibility:
+            _tags:
+            - tree
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 280
+          _boundsSize: {x: 0.8471149, y: 1.3324169, z: 0.7616024}
+        _reference:
+          m_AssetGUID: cb29099bf3fd5cd47b91cbd7c5fb3ce2
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: tree_oak
+        _metadata:
+          _id: 3253666e-ed31-4cab-8f16-a6e3a4df466d
+          _description: 
+          _compatibility:
+            _tags:
+            - tree
+            - oak tree
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 64
+          _boundsSize: {x: 0.6405541, y: 1.2262399, z: 0.739648}
+        _reference:
+          m_AssetGUID: 25bcd3560a92145448c27dd5528bbcb2
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: tree_palm
+        _metadata:
+          _id: cfde4777-6798-4fc0-bfdf-047ab61c3ef1
+          _description: 
+          _compatibility:
+            _tags:
+            - tree
+            - palm tree
+            - tropical
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 36
+          _boundsSize: {x: 1.4627619, y: 1.4234667, z: 1.4627619}
+        _reference:
+          m_AssetGUID: 4d63e34766dc6cb4e9e398316deb1226
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: tree_pineDefaultB
+        _metadata:
+          _id: 912bf294-1e4e-4fb5-9e48-036ff15a487d
+          _description: 
+          _compatibility:
+            _tags:
+            - tree
+            - pine tree
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 66
+          _boundsSize: {x: 0.53195995, y: 1.5457408, z: 0.53195995}
+        _reference:
+          m_AssetGUID: 9589835dff4ec8e44ab17a19a658fbc9
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: tree_pineTallC_detailed
+        _metadata:
+          _id: 4f9078ea-180b-4626-80aa-e6336ff8ba59
+          _description: 
+          _compatibility:
+            _tags:
+            - tree
+            - pine tree
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 88
+          _boundsSize: {x: 0.48038438, y: 1.670499, z: 0.55469996}
+        _reference:
+          m_AssetGUID: 2d7acf9a0c74ee74b807b67eb5301548
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: tree_pineTallD_detailed
+        _metadata:
+          _id: daa7b88e-955e-4272-a06c-04791a0e98fd
+          _description: 
+          _compatibility:
+            _tags:
+            - tree
+            - pine tree
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 88
+          _boundsSize: {x: 0.48038438, y: 2.0754988, z: 0.55469996}
+        _reference:
+          m_AssetGUID: b7bda434a1fc7bc4080e15070067f1d2
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: flower_purpleA
+        _metadata:
+          _id: c7f16e24-9aa6-4960-982d-fa9a5700ee1d
+          _description: 
+          _compatibility:
+            _tags:
+            - flower
+            - purple flower
+            - ground cover
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 40
+          _boundsSize: {x: 0.15909751, y: 0.24249998, z: 0.18105905}
+        _reference:
+          m_AssetGUID: f5fdddf88757673438667cc12fc979aa
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: flower_purpleC
+        _metadata:
+          _id: c2c1ca56-d054-4d76-848a-d112a705d9bf
+          _description: 
+          _compatibility:
+            _tags:
+            - flower
+            - purple flower
+            - ground cover
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 39
+          _boundsSize: {x: 0.18059698, y: 0.18249999, z: 0.18105905}
+        _reference:
+          m_AssetGUID: 5e312334dfdd8fc4da2a16e444671a70
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: flower_redA
+        _metadata:
+          _id: 74da2887-5465-4660-bf14-b3fb91b36f1d
+          _description: 
+          _compatibility:
+            _tags:
+            - flower
+            - red flower
+            - ground cover
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 40
+          _boundsSize: {x: 0.15909751, y: 0.2925, z: 0.18105905}
+        _reference:
+          m_AssetGUID: 8ef1ad98db93b7c42a6619b715128632
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: flower_redC
+        _metadata:
+          _id: ff7b8db0-1587-449f-acbc-d30ec3025431
+          _description: 
+          _compatibility:
+            _tags:
+            - flower
+            - red flower
+            - ground cover
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 39
+          _boundsSize: {x: 0.18059698, y: 0.23249999, z: 0.18105905}
+        _reference:
+          m_AssetGUID: 483ddb372519e8a4f9f5008078465629
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: flower_yellowA
+        _metadata:
+          _id: 821c29b6-0688-4f04-88fa-05dac1d54baa
+          _description: 
+          _compatibility:
+            _tags:
+            - flower
+            - yellow flower
+            - ground cover
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 40
+          _boundsSize: {x: 0.15909751, y: 0.19249998, z: 0.18105905}
+        _reference:
+          m_AssetGUID: d60cb4b9c39c5504f991e3c3a1720c2d
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: flower_yellowC
+        _metadata:
+          _id: fdd8500f-481a-4c0e-94ec-9f21c8bffacd
+          _description: 
+          _compatibility:
+            _tags:
+            - flower
+            - yellow flower
+            - ground cover
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 39
+          _boundsSize: {x: 0.18059698, y: 0.1325, z: 0.18105905}
+        _reference:
+          m_AssetGUID: ae9bd94f44e60914e9162a1eee79502a
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: plant_bushA
+        _metadata:
+          _id: 8fc3d876-730c-45b8-81e2-3af8c27c193e
+          _description: 
+          _compatibility:
+            _tags:
+            - bush
+            - undergrowth
+            - foliage
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 32
+          _boundsSize: {x: 0.39599997, y: 0.2444436, z: 0.39599997}
+        _reference:
+          m_AssetGUID: 53bed351b44799144a37351fb81201d6
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: plant_bushB
+        _metadata:
+          _id: ec8ea771-1588-4869-9235-ec0c172ee6d6
+          _description: 
+          _compatibility:
+            _tags:
+            - bush
+            - undergrowth
+            - foliage
+            - fern
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 104
+          _boundsSize: {x: 0.6025438, y: 0.36041087, z: 0.6025438}
+        _reference:
+          m_AssetGUID: d25484f4526bcd54db158c617d64343a
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: plant_bushC
+        _metadata:
+          _id: 53d721f1-8eb2-4011-baab-1df397612c41
+          _description: 
+          _compatibility:
+            _tags:
+            - bush
+            - undergrowth
+            - foliage
+            - fern
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 39
+          _boundsSize: {x: 0.4076907, y: 0.16932748, z: 0.4707608}
+        _reference:
+          m_AssetGUID: 0dd2f5e53e541ba43a9d7aa157222706
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: log
+        _metadata:
+          _id: cfe62362-3d0f-4c4d-884f-0006e4febba6
+          _description: 
+          _compatibility:
+            _tags:
+            - log
+            - dead
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 68
+          _boundsSize: {x: 0.23396109, y: 0.17320509, z: 0.7099999}
+        _reference:
+          m_AssetGUID: 74b5ca121ac687049a580ea0f4308bc9
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_largeB
+        _metadata:
+          _id: 10da383f-7bd3-4a15-9bc9-b4514d4ba9ef
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - large rock
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 76
+          _boundsSize: {x: 0.76671493, y: 0.43025395, z: 1.0154613}
+        _reference:
+          m_AssetGUID: d8d05127556b26e4b9ab87c0b7f3949f
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_largeD
+        _metadata:
+          _id: 9399d4e5-89ad-434c-8591-cd3d29ee8ae6
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - large rock
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 72
+          _boundsSize: {x: 1.0687767, y: 0.56825995, z: 1.0302829}
+        _reference:
+          m_AssetGUID: 98548034716a05744b7a17d4962378aa
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_largeF
+        _metadata:
+          _id: 37d7709b-fe5b-4405-b51d-cf4a3a564485
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - large rock
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 66
+          _boundsSize: {x: 1.0954587, y: 0.47896197, z: 0.8989824}
+        _reference:
+          m_AssetGUID: 90e12db0a73349246a00b1fcf72ee465
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_smallA
+        _metadata:
+          _id: 633b1d4e-7a0c-4be9-b6de-53c0a472d79a
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - small rock
+            - small stone
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 16
+          _boundsSize: {x: 0.36079997, y: 0.191224, z: 0.36079997}
+        _reference:
+          m_AssetGUID: 1cae5d5b0819c47459a34b7e17f3f604
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_smallC
+        _metadata:
+          _id: ba9a529b-ed7b-48ea-bf71-8895fc723588
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - small rock
+            - small stone
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 16
+          _boundsSize: {x: 0.36079997, y: 0.12267199, z: 0.36079997}
+        _reference:
+          m_AssetGUID: 320b2b00687f3a84ab8a4bf95639fe6d
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_smallE
+        _metadata:
+          _id: 0662ff0d-2470-41a0-803f-51677eeaebe0
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - small rock
+            - small stone
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 64
+          _boundsSize: {x: 0.36079997, y: 0.25616798, z: 0.31246197}
+        _reference:
+          m_AssetGUID: dfd8553e02677084da2a0f0fdf04ced2
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_smallF
+        _metadata:
+          _id: 1904e846-c7ac-473a-9ab6-d3c2c26bbc28
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - small rock
+            - small stone
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 60
+          _boundsSize: {x: 0.353584, y: 0.24534398, z: 0.30621278}
+        _reference:
+          m_AssetGUID: dc481f37cb4641f42a0aa6a954f1899a
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_tallA
+        _metadata:
+          _id: c8ebcf64-ef7f-4481-9d4e-b0badffd9b1f
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - boulder
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 124
+          _boundsSize: {x: 0.98306876, y: 0.99592584, z: 0.6832108}
+        _reference:
+          m_AssetGUID: 14dc9d2415a85814aae6927064849087
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_tallB
+        _metadata:
+          _id: 9cc79db2-d2f5-4085-b8b4-192527630758
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - boulder
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 152
+          _boundsSize: {x: 0.7647883, y: 0.8837796, z: 0.77003735}
+        _reference:
+          m_AssetGUID: 00dcceeee41bde0448c170340253be16
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_tallF
+        _metadata:
+          _id: 7f734744-6c52-4ff6-a1e5-2e686779bdea
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - boulder
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 42
+          _boundsSize: {x: 0.443696, y: 0.573672, z: 0.51233596}
+        _reference:
+          m_AssetGUID: c5a9a39d548e28f4c831d3e1ea4c1983
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stone_tallH
+        _metadata:
+          _id: 96415ce8-0107-4ad2-9d98-9baa4f23ced7
+          _description: 
+          _compatibility:
+            _tags:
+            - rock
+            - stone
+            - boulder
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 74
+          _boundsSize: {x: 0.57492995, y: 0.710776, z: 0.66387194}
+        _reference:
+          m_AssetGUID: b13b57322243c5545be2249da8e0d822
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+      - _name: stump_old
+        _metadata:
+          _id: 21d0769e-b701-4ea2-8628-9d83506eadd6
+          _description: 
+          _compatibility:
+            _tags:
+            - stump
+            - dead
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 120
+          _boundsSize: {x: 0.35652697, y: 0.26649997, z: 0.371}
+        _reference:
+          m_AssetGUID: fb549fba6b0862841951a7deb9814b0b
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+  - _name: Skyboxes
+    _references:
+      _references:
+      - _name: pink_sky
+        _metadata:
+          _id: 07acca0f-d5a2-49d1-bd62-55f786cf5857
+          _description: 
+          _compatibility:
+            _tags:
+            - day
+            - cloudy
+            - clear
+            - sunny
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 0
+          _boundsSize: {x: 0, y: 0, z: 0}
+        _reference:
+          m_AssetGUID: e38a7f84fa2687e4595303b65235c758
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+  - _name: TerrainTextures
+    _references:
+      _references:
+      - _name: SampleTerrainGrass
+        _metadata:
+          _id: e17437f1-521b-4fc2-8fa5-8eccf800f06a
+          _description: 
+          _compatibility:
+            _tags:
+            - grass
+            - ground
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 0
+          _boundsSize: {x: 0, y: 0, z: 0}
+        _reference:
+          m_AssetGUID: 4ffffa669be99274b9cec710e721fcca
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0
+  - _name: Stacks
+    _references:
+      _references:
+      - _name: RuntimeQuickSampleGeneratorStack
+        _metadata:
+          _id: cdae3b96-3cea-4ec3-80fe-fd7c5cb308b5
+          _description: 
+          _compatibility:
+            _tags:
+            - Forest
+            - Plains
+            - Desert
+            _negativeTags: []
+            _isAutoTagged: 0
+            _cost: 0
+          _boundsSize: {x: 0, y: 0, z: 0}
+        _reference:
+          m_AssetGUID: 291f716db9a8a0141a37434224e2f50a
+          m_SubObjectName: 
+          m_SubObjectType: 
+          m_EditorAssetChanged: 0

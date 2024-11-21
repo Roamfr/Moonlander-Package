@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/LibraryWindow.uss?fileID=7433441132597879392&amp;guid=1e69311c24c6176498ef0087061bf620&amp;type=3#LibraryWindow" />
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/TabRadioGroups.uss?fileID=7433441132597879392&amp;guid=a16def3c60524d0bbb5858cf39633d3c&amp;type=3#TabRadioGroups" />
+    <ui:TwoPaneSplitView fixed-pane-initial-dimension="200">
+        <ui:VisualElement class="library__properties-pane">
+            <ui:ListView name="named-properties-list" show-add-remove-footer="true" focusable="true" reorderable="true" fixed-item-height="24" show-bound-collection-size="false" binding-path="_properties" class="library__named-properties" />
+        </ui:VisualElement>
+        
+        <ui:TwoPaneSplitView fixed-pane-index="1" fixed-pane-initial-dimension="350" class="library__property-data-split">
+            <ui:VisualElement>
+                <uie:Toolbar>
+                    <ui:VisualElement class="moonlander-toolbar-spacer"/>
+                    <uie:ToolbarSearchField name="search-field" class="library-search-field"/>
+                </uie:Toolbar>
+                <Moonlander.Core.Editor.NamedPropertyAssetsView name="assets-view" class="library__assets" />
+            </ui:VisualElement>
+            <ui:VisualElement name="inspector-panel" class="library__inspector-pane library-inspector">
+                <uie:Toolbar>
+                    <ui:Label text="Properties" class="library-inspector__header"/>
+                </uie:Toolbar>
+                <ui:ScrollView name="inspector-content-container" class="library__inspector-container" />
+            </ui:VisualElement>
+            
+        </ui:TwoPaneSplitView>
+    </ui:TwoPaneSplitView>
+</ui:UXML>

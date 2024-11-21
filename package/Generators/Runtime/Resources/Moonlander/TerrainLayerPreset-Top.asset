@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1030679895, guid: b16bdd9ac385d244c9b2e6f023027396, type: 3}
+  m_Name: TerrainLayerPreset-Top
+  m_EditorClassIdentifier: 
+  _stack:
+    _layers:
+    - rid: 5956416805781381226
+  references:
+    version: 2
+    RefIds:
+    - rid: 5956416805781381226
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 5956416805781381227
+          - rid: 5956416805781381228
+          - rid: 5956416805781381229
+        _dataRegistry:
+          _registryName: TerrainHeight
+        _evaluator:
+          rid: 5956416805781381230
+    - rid: 5956416805781381227
+      type: {class: SteepnessFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Steepness Filter
+        _enabled: 1
+    - rid: 5956416805781381228
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.498
+        _inputMid: 0.5
+        _inputHigh: 0.694
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 5956416805781381229
+      type: {class: BlurFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Blur Filter
+        _enabled: 1
+        _blurRadius: 0.1
+    - rid: 5956416805781381230
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 

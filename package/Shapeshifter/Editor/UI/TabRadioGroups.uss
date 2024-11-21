@@ -1,0 +1,29 @@
+/*.moonlander-tabs {*/
+/*    margin-bottom: -1px;*/
+/*    margin-left: -5px;*/
+/*    margin-top: 10px;*/
+/*}*/
+
+.moonlander-tabs .unity-radio-button-group__container {
+    flex-direction: row;
+}
+
+.moonlander-tabs .unity-radio-button {
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 2px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom-width: 2px;
+}
+
+.moonlander-tabs .unity-radio-button__checkmark-background {
+    display: none;
+}
+
+.moonlander-tabs .unity-radio-button:checked {
+    border-bottom-color: var(--unity-colors-default-text);
+}

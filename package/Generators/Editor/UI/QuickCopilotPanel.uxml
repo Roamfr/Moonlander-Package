@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Generators/Editor/UI/QuickCopilotPanel.uss?fileID=7433441132597879392&amp;guid=220352d18426ad045b3a51732f38e04e&amp;type=3#QuickCopilotPanel" />
+    <ui:VisualElement class="input-container">
+        <Moonlander.Extensions.Editor.EnhancedTextField placeholder-text="Write a generation request" class="input-container__input-field">
+            <ui:VisualElement tooltip="Send message" class="send-button">
+                <ui:VisualElement class="send-button__icon" />
+            </ui:VisualElement>
+        </Moonlander.Extensions.Editor.EnhancedTextField>
+    </ui:VisualElement>
+    <ui:VisualElement class="message-generating">
+        <ui:Label text="Generating response..." class="message-generating__label" />
+        <Moonlander.Extensions.Editor.Spinner />
+    </ui:VisualElement>
+    <ui:VisualElement class="output-container">
+        <ui:VisualElement class="output-container__prompt-container">
+            <ui:Label text="Prompt" class="output-container__prompt-title"/>
+            <ui:Label tabindex="-1" text="Label" parse-escape-sequences="true" display-tooltip-when-elided="true" class="output-container__prompt-label" />
+        </ui:VisualElement>
+        <ui:Button text="Apply" class="output-container__apply-button" />
+        <ui:HelpBox message-type="Warning" text="No library is assigned with a 'Stacks' group. Please add one to apply the stack." class="output-container__apply-info"/>
+    </ui:VisualElement>
+</ui:UXML>

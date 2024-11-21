@@ -1,0 +1,54 @@
+.moonlander-dropdown-button {
+    flex-direction: row;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.moonlander-dropdown-button--no-text > .moonlander-dropdown-button__button {
+    padding-left: 0;
+}
+
+.moonlander-dropdown-button__button {
+    margin: 0;
+    padding: 0;
+    padding-left: 2px;
+    border-width: 0;
+    flex-direction: row;
+    flex-grow: 0;
+    border-radius: 2px 0 0 2px;
+    margin-right: 1px;
+    justify-content: center;
+    align-items: center;
+    min-width: 22px;
+}
+
+.moonlander-dropdown-button__button:hover {
+    background-color: var(--unity-colors-button-background-hover);
+}
+
+.moonlander-dropdown-button__dropdown {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0 2px 2px 0;
+    width: 14px;
+    height: 20px;
+    justify-content: center;
+}
+
+.moonlander-dropdown-button__dropdown:hover {
+    background-color: var(--unity-colors-button-background-hover);
+}
+
+.moonlander-dropdown-button__icon {
+    width: 16px;
+    height: 16px;
+    -unity-background-scale-mode: scale-to-fit;
+    align-self: center;
+}
+
+
+
+.moonlander-dropdown-button__text {
+    padding-right: 4px;
+}

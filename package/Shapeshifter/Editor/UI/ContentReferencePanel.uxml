@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" 
+         xmlns:uie="UnityEditor.UIElements"
+         xmlns:mle="Moonlander.Core.Editor"
+         xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         engine="UnityEngine.UIElements" 
+         editor="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/ContentReferencePanel.uss?fileID=7433441132597879392&amp;guid=33a6dd321181d4b4eaede1b2c6e7cd4f&amp;type=3#ContentReferencePanel" />
+    <ui:VisualElement class="content-inspector__preview-area">
+        <ui:IMGUIContainer class="content-inspector__preview" />
+    </ui:VisualElement>
+    <ui:VisualElement class="content-inspector__fields-container">
+        <ui:TextField picking-mode="Ignore" binding-path="_name" class="content-inspector__name" />
+        <ui:Label tabindex="-1" text="Description" parse-escape-sequences="true" display-tooltip-when-elided="true" class="content-inspector__field-label" />
+        <ui:TextField picking-mode="Ignore" multiline="true" binding-path="_metadata._description" class="content-inspector__description" />
+        
+        <ui:VisualElement class="content-inspector__spacer"/>
+        
+        <ui:Label text="Bounds Size" class="content-inspector__field-label" />
+        <ui:Vector3Field binding-path="_metadata._boundsSize" />
+        <ui:Label text="Cost" class="content-inspector__field-label" />
+        <ui:IntegerField binding-path="_metadata._compatibility._cost" />
+        
+        <ui:Label tabindex="-1" text="Tags" parse-escape-sequences="true" display-tooltip-when-elided="true" class="content-inspector__field-label" />
+        <Moonlander.Core.ChipGroup focusable="true" allow-duplicates="false" binding-path="_metadata._compatibility._tags" class="content-inspector__tags" />
+        <ui:Label tabindex="-1" text="Negative Tags" parse-escape-sequences="true" display-tooltip-when-elided="true" class="content-inspector__field-label" />
+        <Moonlander.Core.ChipGroup focusable="true" allow-duplicates="false" binding-path="_metadata._compatibility._negativeTags" class="content-inspector__negative-tags" />
+    </ui:VisualElement>
+    <ui:VisualElement class="content-inspector__spacer"/>
+    <mle:AnalyzeContentButton class="content-inspector__analyze-button"/>
+</ui:UXML>

@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1030679895, guid: b16bdd9ac385d244c9b2e6f023027396, type: 3}
+  m_Name: DynamicTerrainHeightPreset_old
+  m_EditorClassIdentifier: 
+  _stack:
+    _layers:
+    - rid: 5956416354863811954
+    - rid: 5956416353375636325
+  references:
+    version: 2
+    RefIds:
+    - rid: 5956416353375636324
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Base
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 5956416354863811957
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 10
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 5956416353375636325
+      type: {class: GroupLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: '%Plains'
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 5956416648731703584
+        _children:
+        - rid: 5956416353375636324
+    - rid: 5956416354863811954
+      type: {class: GroupLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: '%Mountains'
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _children:
+        - rid: 5956416354863811955
+    - rid: 5956416354863811955
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Base
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 5956416354863811956
+        _type: 2
+        _offset: {x: 0, y: 0}
+        _frequency: 10
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: 0
+          amplitude: 33.4
+          frequency: 24.4
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 5956416354863811956
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0
+        _inputMid: 0.41
+        _inputHigh: 0.315
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 5956416354863811957
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0
+        _inputMid: 0.62
+        _inputHigh: 1
+        _outputLow: 0
+        _outputHigh: 0.38
+    - rid: 5956416648731703584
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0
+        _inputMid: 0.5
+        _inputHigh: 1
+        _outputLow: 0
+        _outputHigh: 0.18

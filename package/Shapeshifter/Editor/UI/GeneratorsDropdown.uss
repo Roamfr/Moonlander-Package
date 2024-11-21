@@ -1,0 +1,104 @@
+.moonlander-tab-next-icon {
+    width: 16px;
+    height: 16px;
+    background-image: resource("icons/d_tab_next.png");
+}
+
+.moonlander-tab-prev-icon {
+    width: 16px;
+    height: 16px;
+    background-image: resource("icons/d_tab_prev.png");
+}
+
+.generators-dropdown {
+    background-color: rgb(24, 24, 24);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgb(56, 56, 56);
+    border-right-color: rgb(56, 56, 56);
+    border-top-color: rgb(56, 56, 56);
+    border-bottom-color: rgb(56, 56, 56);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.generators-dropdown__separator {
+    background-color: rgb(95, 95, 95);
+    margin-top: 3px;
+    margin-bottom: 3px;
+    height: 1px;
+    flex-shrink: 0;
+}
+
+.template-group__name {
+    -unity-font-style: bold;
+    padding-bottom: 5px;
+    padding-top: 2px;
+}
+
+.template-group {
+    border-left-color: rgb(101, 101, 101);
+    border-right-color: rgb(101, 101, 101);
+    border-top-color: rgb(101, 101, 101);
+    border-bottom-color: rgb(101, 101, 101);
+    border-bottom-width: 1px;
+    padding-bottom: 3px;
+    margin-top: 3px;
+    margin-left: -2px;
+    padding-left: 4px;
+}
+
+.generators-dropdown__item {
+    padding-left: 15px;
+    height: 21px;
+    flex-direction: row;
+    align-items: center;
+    -unity-text-align: middle-left;
+    text-overflow: ellipsis;
+}
+
+.generators-dropdown__item:hover {
+    background-color: var(--unity-colors-highlight-background);
+}
+
+.generators-dropdown__item > .unity-label {
+    flex-grow: 1;
+}
+
+.generators-dropdown__search {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+    /*TODO: Remove like when search is actually implemented.*/
+    display: none;
+}
+
+.generators-dropdown__header {
+    height: 24px;
+    flex-shrink: 0;
+    margin-bottom: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.generators-dropdown__header:hover {
+    background-color: rgba(127, 127, 127, 0.5);
+}
+
+.generators-dropdown__header > .moonlander-tab-prev-icon {
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+.generators-dropdown__header--root > .moonlander-tab-prev-icon {
+    display: none;
+}

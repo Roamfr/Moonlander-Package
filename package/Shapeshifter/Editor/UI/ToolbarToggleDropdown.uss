@@ -1,0 +1,21 @@
+.moonlander-toolbar-toggle-dropdown {
+    flex-direction: row;
+    padding-right: 0;
+}
+
+.moonlander-toolbar-toggle-dropdown__separator {
+    width: 1px;
+    background-color: var(--unity-colors-toolbar-border);
+    margin-left: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.moonlander-toolbar-toggle-dropdown__dropdown {
+    justify-content: center;
+    width: 18px;
+}
+
+.moonlander-toolbar-toggle-dropdown__dropdown:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,117 @@
+.moonlander-toolbar-spacer {
+    flex-grow: 1;
+}
+
+#libraries-list .unity-list-view__item {
+    -unity-text-align: middle-left;
+    padding-left: 15px;
+}
+
+.library__named-properties .unity-list-view__item {
+    padding-left: 15px;
+}
+
+.library__named-properties .unity-collection-view__scroll-view {
+    background-color: var(--unity-colors-window-background);
+    border-bottom-width: 1px;
+}
+
+.library__named-properties .unity-list-view__footer {
+    background-color: var(--unity-colors-window-background);
+}
+
+.library__named-properties .unity-list-view__footer > .unity-button {
+    background-color: var(--unity-colors-window-background);
+}
+
+.library__named-properties .unity-list-view__footer > .unity-button:hover {
+    background-color: var(--unity-colors-highlight-background-hover);
+}
+
+
+.library-property-header {
+    border-bottom-width: 1px;
+    border-bottom-color: var(--unity-colors-button-border);
+    flex-direction: row;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+.library-property-header__library {
+}
+
+.library-property-header__library .unity-base-field__input {
+    background-color: rgba(0, 0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.library__assets {
+    flex-grow: 1;
+    background-color: var(--unity-colors-box-background);
+    min-width: 200px;
+}
+
+.unity-two-pane-split-view__dragline-anchor {
+    background-color: var(--unity-colors-app_toolbar_button-border);
+}
+
+.library-inspector__header {
+    padding-left: 10px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+}
+
+.library-inspector__tabs {
+    background-color: var(--unity-colors-toolbar-background);
+    border-bottom-width: 1px;
+    border-bottom-color: var(--unity-colors-toolbar-border);
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.library__inspector-container {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.library__properties-pane {
+    min-width: 100px;
+}
+
+.library__inspector-pane {
+    min-width: 210px;
+}
+
+.shapeshifter-assets-view__display-mode {
+    width: 24px;
+    align-items: center;
+    justify-content: center;
+    border-right-width: 0;
+}
+
+.shapeshifter-assets-view__display-mode .unity-toggle__input {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/d_GridDisplayMode.png?fileID=2800000&guid=85a5faab76cc06f4591c214ad8c9c934&type=3#d_GridDisplayMode');
+    width: 16px;
+    height: 16px;
+}
+
+.shapeshifter-assets-view__display-mode:checked .unity-toggle__input {
+    background-image: url('project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/Icons/d_ListDisplayMode.png?fileID=2800000&guid=92c8e8ca2128b1341a6e0d0563b2271a&type=3#d_ListDisplayMode');
+}
+
+.shapeshifter-assets-view__display-size {
+    width: 100px;
+}
+
+.shapeshifter-assets-view .unity-toolbar {
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom-width: 0;
+}

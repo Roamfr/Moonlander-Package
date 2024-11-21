@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Shapeshifter/Editor/UI/GeneratorsDropdown.uss?fileID=7433441132597879392&amp;guid=7ece59df06e7ac24d8d7d887ae602a7b&amp;type=3#GeneratorsDropdown" />
+<!--    <uie:ToolbarSearchField focusable="true" name="ToolbarSearchField" class="generators-dropdown__search" />-->
+<!--    <ui:VisualElement class="generators-dropdown__separator" />-->
+    <ui:VisualElement class="generators-dropdown__header">
+        <ui:VisualElement class="generators-dropdown__header-back moonlander-tab-prev-icon"/>
+        <ui:Label class="generators-dropdown__header-title"/>
+    </ui:VisualElement>
+    <ui:VisualElement class="generators-dropdown__separator" />
+    <ui:ScrollView horizontal-scroller-visibility="Hidden" class="generators-dropdown__container">
+    </ui:ScrollView>
+</ui:UXML>

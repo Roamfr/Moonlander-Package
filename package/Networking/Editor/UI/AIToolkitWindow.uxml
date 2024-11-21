@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.mnlndr.moonlander/Networking/Editor/UI/AIToolkitWindow.uss?fileID=7433441132597879392&amp;guid=0aef314b172adbd47858b4b8f12212fe&amp;type=3#AIToolkitWindow" />
+    <ui:TwoPaneSplitView fixed-pane-initial-dimension="200">
+        <ui:ScrollView class="ai-functions-list" />
+        <ui:VisualElement>
+            <ui:VisualElement class="ai-function-header">
+                <ui:Label tabindex="-1" text="AI Function" class="ai-function-header__title" />
+            </ui:VisualElement>
+            <ui:VisualElement class="ai-function-container"/>
+        </ui:VisualElement>
+    </ui:TwoPaneSplitView>
+</ui:UXML>

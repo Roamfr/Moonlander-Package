@@ -1,0 +1,39 @@
+{
+  "name": "com.mnlndr.moonlander",
+  "version": "1.0.0-alpha.6.3",
+  "displayName": "Moonlander SDK",
+  "description": "Moonlander.ai game development suite",
+  "unity": "2021.3",
+  "unityRelease": "10f1",
+  "documentationUrl": "https://docs.moonlander.ai/",
+  "changelogUrl": "https://docs.moonlander.ai/changelog",
+  "licensesUrl": "https://docs.moonlander.ai/licenses",
+  "dependencies": {
+    "com.unity.addressables": "1.21.18",
+    "com.unity.splines": "2.4.0",
+    "com.unity.cloud.gltfast": "6.0.0",
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  },
+  "samples": [
+    {
+      "displayName": "Moonlander SDK Samples",
+      "description": "Moonlander.ai runtime samples",
+      "path": "Samples~/"
+    }
+  ],
+  "keywords": [
+    "Procedural",
+    "tools",
+    "generative",
+    "random",
+    "ai",
+    "moonlander"
+  ],
+  "category": "Tool",
+  "type": "tool",
+  "author": {
+    "name": "Moonlander.ai",
+    "email": "info@mnlndr.com",
+    "url": "https://moonlander.ai/"
+  }
+}

@@ -1,0 +1,1540 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5705195153538912589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -55284931, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: SkyShaperGenerator
+  m_EditorClassIdentifier: 
+  _id: -1
+  _enabled: 1
+  _contentPool:
+    _enabled: 1
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: Skyboxes
+      _loadAmount: 1
+      _resultType: 0
+      _queries:
+      - rid: 3136552061965490527
+  _loadedContentIds:
+  - e2b5b366-6a07-41e0-8f98-4483d4b3c116
+  _skybox: {fileID: 2100000, guid: 6162a6db595974636b2002da3818b681, type: 2}
+  references:
+    version: 2
+    RefIds:
+    - rid: 3136552061965490527
+      type: {class: TextQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        _queryText: Day Sun High Overcast 2
+        _minimumMatchingScore: 0
+--- !u!114 &-3715441959205457828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -945914773, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: BigObjects
+  m_EditorClassIdentifier: 
+  _id: -1
+  _enabled: 1
+  _contentPool:
+    _enabled: 0
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 3dAssets
+      _loadAmount: 5
+      _resultType: 0
+      _queries:
+      - rid: 3136552051658457096
+      - rid: 3136552051658457097
+  _loadedContentIds:
+  - f10c521b-2818-4839-acd1-53728ebb0f22
+  - ba1a0767-b9ce-4a84-b57f-3bd49db25476
+  - 9461d57a-b135-406b-beb8-1c26c6879984
+  - 8d90fbbc-9f1e-4ac5-8bf3-a437da1ea2f6
+  - 7416837a-28af-419b-83a1-c74b4b1609cd
+  _adjustedCost: 159
+  _costWeight: 0.086
+  _placeables:
+  - {fileID: 2639178135799527569, guid: 2c71f3bb1758e824494c5a4a16c89015, type: 3}
+  - {fileID: 1358054364387221446, guid: 016dad81e5bfd3e49a340179fb4e1150, type: 3}
+  - {fileID: 1653678598776248653, guid: 987094f792fe9f946b536b171a0114c1, type: 3}
+  - {fileID: 7078907134251479745, guid: 915b43792ae342d4ba5fa425e86cc6f4, type: 3}
+  - {fileID: 5556296651694026700, guid: 19df7a28074cb284a8aa8562718310f5, type: 3}
+  _generationType: 0
+  _densityLayers:
+    _layers:
+    - rid: 3136552051658457098
+    - rid: 3136552051658457099
+    - rid: 3136552051658457100
+    - rid: 3136552061236430243
+  _spacing: 5
+  _density: 0.8
+  _adjustedDensity: 0.086004056
+  _chaos: 1
+  _outputName: 
+  _GPUInstance: 1
+  _useTerrainDataAsHeightInput: 1
+  _heightmapLayers:
+    _layers: []
+  _terrainMaxHeight: 0
+  _offsetSpace: 1
+  _offset: {x: 0, y: 0, z: 0}
+  _orientationLayers:
+    _layers: []
+  _rotationXRange:
+    _min: 0
+    _max: 0
+  _rotationYRange:
+    _min: 0
+    _max: 360
+  _rotationZRange:
+    _min: 0
+    _max: 0
+  _scaleLayers:
+    _layers: []
+  _scaleRange:
+    _min: 0.75
+    _max: 1.5
+  _enableConformToTerrain: 0
+  _enableTerrainBlending: 0
+  _terrainBlendHeight: 0
+  _terrainBlend: 0.3
+  _drawDistance: 200
+  _shadowCastingMode: 1
+  _enableCollision: 1
+  _collisionMode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3136552051658457096
+      type: {class: FuzzyTagQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        _positiveTags:
+        - tree
+        - beech
+        _negativeTags: []
+        _minimumMatchingScore: 75
+    - rid: 3136552051658457097
+      type: {class: FootprintQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        x:
+          _min: 0
+          _max: 0
+        y:
+          _min: 7
+          _max: 1000
+        z:
+          _min: 0
+          _max: 0
+        XZ:
+          _min: 0
+          _max: 150
+        YX:
+          _min: 0
+          _max: 0
+        YZ:
+          _min: 0
+          _max: 0
+    - rid: 3136552051658457098
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552051658457101
+          - rid: 3136552051658457102
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 3136552051658457103
+    - rid: 3136552051658457099
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 4
+        _opacity: 1
+        _enabled: 0
+        _filters:
+          _filters:
+          - rid: 3136552051658457104
+        _type: 2
+        _offset: {x: 0, y: 0}
+        _frequency: 26.6
+        _fractalData:
+          type: 0
+          octaves: 2
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: 0
+          amplitude: 344.1
+          frequency: 5
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 3136552051658457100
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 4
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552051658457105
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 10
+        _fractalData:
+          type: 0
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 3136552051658457101
+      type: {class: SteepnessFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Steepness Filter
+        _enabled: 1
+    - rid: 3136552051658457102
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.117
+        _inputMid: 0.5
+        _inputHigh: 0.305
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552051658457103
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 3136552051658457104
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.126
+        _inputMid: 0.5
+        _inputHigh: 0.246
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552051658457105
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.332
+        _inputMid: 0.5
+        _inputHigh: 0.526
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552061236430243
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 4
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552061236430246
+        _dataRegistry:
+          _registryName: Object Mask
+        _evaluator:
+          rid: 3136552061236430259
+    - rid: 3136552061236430246
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.274
+        _inputMid: 0.5
+        _inputHigh: 0
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552061236430259
+      type: {class: ObjectRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data:
+        _radius: 10
+--- !u!114 &-3534934764183257554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 865981652, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: ColorGradingGenerator
+  m_EditorClassIdentifier: 
+  _id: -1
+  _enabled: 1
+  _contentPool:
+    _enabled: 0
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 
+      _loadAmount: 1
+      _resultType: 1
+      _queries: []
+  _loadedContentIds: []
+  _profile: {fileID: 11400000, guid: b8fc8c6fe5101f54482c669abe1ebb8b, type: 2}
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &-1335629226247053728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -945914773, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: Urban
+  m_EditorClassIdentifier: 
+  _id: -1
+  _enabled: 1
+  _contentPool:
+    _enabled: 0
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 3dAssets
+      _loadAmount: 5
+      _resultType: 0
+      _queries:
+      - rid: 3136552061193420800
+      - rid: 3136552061193420801
+  _loadedContentIds:
+  - f19c28a7-8baf-4e6b-b691-b34c2760b29e
+  - bf8dd2eb-7d3e-4472-89e5-7b8dafd7bd72
+  - bdb72062-b55a-43a5-8aa1-ece528a02695
+  - 8f429bd4-a686-42a9-824d-1f5798181b16
+  - 7b9bb458-01b9-4b65-8cd8-bf7fc223ecfd
+  _adjustedCost: 1004
+  _costWeight: 1
+  _placeables:
+  - {fileID: 8200166412742537822, guid: 60f4389e2aead4a48adf9d3f86037e39, type: 3}
+  - {fileID: 7484113562100013905, guid: 288e2f606ad62fa479ca285e0235b846, type: 3}
+  - {fileID: 7749785208804304080, guid: ddfcddb1ac4579d45a421e73bc4f51fe, type: 3}
+  - {fileID: 4861558409068825855, guid: cd6458cca5dc06245b5b4ac572d31045, type: 3}
+  - {fileID: 2051181866219419621, guid: 0c30041ba306e6144aa02731af843df0, type: 3}
+  _generationType: 0
+  _densityLayers:
+    _layers:
+    - rid: 3136552061193420802
+    - rid: 3136552061193420803
+    - rid: 3136552061193420804
+  _spacing: 30
+  _density: 1
+  _adjustedDensity: 0.2911833
+  _chaos: 0.117
+  _outputName: Object Mask
+  _GPUInstance: 1
+  _useTerrainDataAsHeightInput: 1
+  _heightmapLayers:
+    _layers: []
+  _terrainMaxHeight: 0
+  _offsetSpace: 1
+  _offset: {x: 0, y: 0, z: 0}
+  _orientationLayers:
+    _layers: []
+  _rotationXRange:
+    _min: 0
+    _max: 0
+  _rotationYRange:
+    _min: -5
+    _max: 5
+  _rotationZRange:
+    _min: 0
+    _max: 0
+  _scaleLayers:
+    _layers: []
+  _scaleRange:
+    _min: 1
+    _max: 1
+  _enableConformToTerrain: 0
+  _enableTerrainBlending: 0
+  _terrainBlendHeight: 0
+  _terrainBlend: 0.3
+  _drawDistance: 300
+  _shadowCastingMode: 1
+  _enableCollision: 1
+  _collisionMode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3136552061193420800
+      type: {class: FuzzyTagQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        _positiveTags:
+        - house
+        _negativeTags: []
+        _minimumMatchingScore: 75
+    - rid: 3136552061193420801
+      type: {class: FootprintQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        x:
+          _min: 0
+          _max: 0
+        y:
+          _min: 6
+          _max: 1000
+        z:
+          _min: 0
+          _max: 0
+        XZ:
+          _min: 150
+          _max: 100000
+        YX:
+          _min: 0
+          _max: 0
+        YZ:
+          _min: 0
+          _max: 0
+    - rid: 3136552061193420802
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552061193420805
+          - rid: 3136552061193420806
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 3136552061193420807
+    - rid: 3136552061193420803
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 4
+        _opacity: 1
+        _enabled: 0
+        _filters:
+          _filters:
+          - rid: 3136552061193420808
+        _type: 2
+        _offset: {x: 0, y: 0}
+        _frequency: 26.6
+        _fractalData:
+          type: 0
+          octaves: 2
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: 0
+          amplitude: 344.1
+          frequency: 5
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 3136552061193420804
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 4
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552061193420809
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 15.75
+        _fractalData:
+          type: 0
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 3136552061193420805
+      type: {class: SteepnessFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Steepness Filter
+        _enabled: 1
+    - rid: 3136552061193420806
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.117
+        _inputMid: 0.5
+        _inputHigh: 0.305
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552061193420807
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 3136552061193420808
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.126
+        _inputMid: 0.5
+        _inputHigh: 0.246
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552061193420809
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.48
+        _inputMid: 0.5
+        _inputHigh: 0.652
+        _outputLow: 0
+        _outputHigh: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 250234093, guid: b16bdd9ac385d244c9b2e6f023027396, type: 3}
+  m_Name: Test_Stack_ForestVillage_001
+  m_EditorClassIdentifier: 
+  _stack:
+    _globalGenerators:
+    - {fileID: 229687385783602332}
+    - {fileID: 55039442118217098}
+    - {fileID: -5705195153538912589}
+    - {fileID: -3534934764183257554}
+    _generators:
+    - {fileID: 480349170926649898}
+    - {fileID: -1335629226247053728}
+    - {fileID: -3715441959205457828}
+    - {fileID: 8989084841968849359}
+    - {fileID: 198400471942870658}
+    - {fileID: 7090355796531951068}
+--- !u!114 &55039442118217098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -50813012, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: TerraformerGenerator
+  m_EditorClassIdentifier: 
+  _id: -1
+  _enabled: 1
+  _contentPool:
+    _enabled: 0
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 
+      _loadAmount: 1
+      _resultType: 1
+      _queries: []
+  _loadedContentIds: []
+  _foliageAmount:
+    _overrideAlphaClipping: 0
+  _topWeatherCover:
+    _enable: 0
+    _tint: {r: 1, g: 1, b: 1, a: 0}
+    _terrainTextureAsset: {fileID: 0}
+    _tile: 0
+    _amount: 0
+    _softness: 0
+    _overrideNormals: 0
+  _topTextureCover:
+    _enable: 0
+    _tint: {r: 1, g: 1, b: 1, a: 0}
+    _terrainTextureAsset: {fileID: 0}
+    _tile: 0
+    _amount: 0
+    _softness: 0
+    _overrideNormals: 0
+  _outline:
+    _enable: 0
+    _thickness: 0
+    _color: {r: 0, g: 0, b: 0, a: 1}
+    _depthSensitivity: 0.5
+    _distanceFade: 0
+  _toonEffect:
+    _enable: 0
+    _mainColor: {r: 1, g: 1, b: 1, a: 0}
+    _ambientColor: {r: 1, g: 1, b: 1, a: 0}
+    _ambientSize: 0
+    _ambientSoftness: 0
+    _ambientMask: {fileID: 0}
+    _ambientMaskTile: 0
+    _ambientMaskBlend: 0
+    _topAmbientColor: {r: 1, g: 1, b: 1, a: 0}
+    _topAmbientSize: 0
+    _topAmbientSoftness: 0
+    _specularColor: {r: 1, g: 1, b: 1, a: 0}
+    _specularSize: 0
+    _specularSoftness: 0
+  _colorPalette:
+    _baseColor: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
+    _firstColor: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
+    _secondColor: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
+  _cameraAngle:
+    _camera: {fileID: 0}
+    _enable: 0
+    _usePoint: 0
+    _clippingDistance: 0
+    _clippingTransition: 0
+  _windEffect:
+    _enable: 1
+    _strength: 0.2
+    _size: 2
+    _speed: 0.3
+    _detailStrength: 0.005
+    _detailSize: 30
+    _detailSpeed: 2
+  references:
+    version: 2
+    RefIds: []
+--- !u!114 &198400471942870658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -945914773, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: SmallObjects
+  m_EditorClassIdentifier: 
+  _id: -1
+  _enabled: 1
+  _contentPool:
+    _enabled: 0
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 3dAssets
+      _loadAmount: 10
+      _resultType: 0
+      _queries:
+      - rid: 3136552051658457110
+      - rid: 3136552051658457111
+  _loadedContentIds:
+  - fd19e2cb-4644-445c-96bd-cecf4afc133d
+  - f330edc6-2ae0-44c4-a68c-d7dd0a70ce5c
+  - eb3a9c77-7be1-460d-b276-70d53c65f6d6
+  - e5924075-98e1-4e8f-ba97-4439a5065cde
+  - da1d4e14-80f1-4ad8-81d7-aefb37fd0539
+  - c65a97e3-51de-43fe-bb59-06de65bf513e
+  - c33c8305-dd9f-45a5-8dac-54acdec99ef5
+  - ba3c14d1-8753-4b64-87aa-fe38b4e59e0e
+  - b19f01fc-75c2-4e53-9857-387bc5eb26d4
+  - ae589e80-3356-4cf7-8a6e-47946474db36
+  _adjustedCost: 38
+  _costWeight: 0.035
+  _placeables:
+  - {fileID: 2155160832620583170, guid: f8829b4f3b93d484ea40b2889e7580e9, type: 3}
+  - {fileID: 7490528522752804569, guid: 71ad76e09203aa64b8bb20553717a4a2, type: 3}
+  - {fileID: 4738556553048188098, guid: 50c9ce3247abc72448ec9446f5e68762, type: 3}
+  - {fileID: 4787918801939981251, guid: e4edc464a8fb86c4ead900c1276aec3b, type: 3}
+  - {fileID: 2959935954706469896, guid: 4b55b77d9cef92646826051240d25fab, type: 3}
+  - {fileID: 2665852112054792085, guid: 92a3cde29f1db8e42b4e124595997a0d, type: 3}
+  - {fileID: 479440491346693109, guid: eae1a020ccaf8dd47baa43b754975d10, type: 3}
+  - {fileID: 4355530589018772892, guid: 2b3d613b2a5e8594ead1bc79671e582a, type: 3}
+  - {fileID: 1057320376238546728, guid: 59aaa11ce2b5f6d439addbed0eef1dfc, type: 3}
+  - {fileID: 2689353289102867036, guid: 19c9aaf9d0b4ddb4ab002a8cbe95e958, type: 3}
+  _generationType: 0
+  _densityLayers:
+    _layers:
+    - rid: 3136552051658457112
+    - rid: 3136552061236430252
+  _spacing: 4
+  _density: 0.5
+  _adjustedDensity: 0.5
+  _chaos: 1
+  _outputName: 
+  _GPUInstance: 1
+  _useTerrainDataAsHeightInput: 1
+  _heightmapLayers:
+    _layers: []
+  _terrainMaxHeight: 0
+  _offsetSpace: 1
+  _offset: {x: 0, y: 0, z: 0}
+  _orientationLayers:
+    _layers:
+    - rid: 3136552051658457113
+  _rotationXRange:
+    _min: 0
+    _max: 0
+  _rotationYRange:
+    _min: 0
+    _max: 360
+  _rotationZRange:
+    _min: 0
+    _max: 0
+  _scaleLayers:
+    _layers: []
+  _scaleRange:
+    _min: 0.75
+    _max: 1.5
+  _enableConformToTerrain: 0
+  _enableTerrainBlending: 1
+  _terrainBlendHeight: 0
+  _terrainBlend: 0.1
+  _drawDistance: 75
+  _shadowCastingMode: 1
+  _enableCollision: 0
+  _collisionMode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3136552051658457110
+      type: {class: FuzzyTagQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        _positiveTags:
+        - butterfly
+        - flower
+        - lily
+        - mushroom
+        - grasshopper
+        - crystal
+        _negativeTags: []
+        _minimumMatchingScore: 75
+    - rid: 3136552051658457111
+      type: {class: FootprintQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        x:
+          _min: 0
+          _max: 0
+        y:
+          _min: 0
+          _max: 3
+        z:
+          _min: 0
+          _max: 0
+        XZ:
+          _min: 0
+          _max: 50
+        YX:
+          _min: 0
+          _max: 0
+        YZ:
+          _min: 0
+          _max: 0
+    - rid: 3136552051658457112
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552051658457114
+          - rid: 3136552051658457115
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 3136552051658457116
+    - rid: 3136552051658457113
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 3136552051658457117
+    - rid: 3136552051658457114
+      type: {class: SteepnessFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Steepness Filter
+        _enabled: 1
+    - rid: 3136552051658457115
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.28
+        _inputMid: 0.5
+        _inputHigh: 0.4
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552051658457116
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 3136552051658457117
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 3136552061236430252
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 4
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552061236430253
+        _dataRegistry:
+          _registryName: Object Mask
+        _evaluator:
+          rid: 3136552061236430254
+    - rid: 3136552061236430253
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.274
+        _inputMid: 0.5
+        _inputHigh: 0
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552061236430254
+      type: {class: ObjectRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data:
+        _radius: 10
+--- !u!114 &229687385783602332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1823148588, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: HeightMap
+  m_EditorClassIdentifier: 
+  _id: -1
+  _enabled: 1
+  _contentPool:
+    _enabled: 0
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 
+      _loadAmount: 1
+      _resultType: 1
+      _queries: []
+  _loadedContentIds: []
+  _layers:
+    _layers:
+    - rid: 8621401734206456075
+  _output: HeightMap
+  references:
+    version: 2
+    RefIds:
+    - rid: 8621401734206456075
+      type: {class: DynamicPresetLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DynamicPresetLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _dynamicPresetData:
+          rid: 8621401734206456076
+    - rid: 8621401734206456076
+      type: {class: TerrainHeightDynamicPresetData, ns: Moonlander.Core.Layers, asm: Moonlander.Generators}
+      data:
+        _hills: 0
+        _dunes: 0
+        _mountains: 0.205
+--- !u!114 &480349170926649898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2049758169, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: Terrain
+  m_EditorClassIdentifier: 
+  _id: -1
+  _enabled: 1
+  _contentPool:
+    _enabled: 0
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 
+      _loadAmount: 1
+      _resultType: 1
+      _queries: []
+  _loadedContentIds: []
+  _terrainLayerData:
+  - _name: Sandy Gravel
+    _enabled: 1
+    _terrainTextureAsset: {fileID: 11400000, guid: 6bc646886b838d84498072b2c2dae7f1,
+      type: 2}
+    _colorTint: {r: 1, g: 1, b: 1, a: 1}
+    _mask:
+      _layers:
+      - rid: 3136552048546031608
+      - rid: 3136552048546031609
+  - _name: Forest Ground 04
+    _enabled: 1
+    _terrainTextureAsset: {fileID: 11400000, guid: d1a86001af422634cb3222c74274988e,
+      type: 2}
+    _colorTint: {r: 1, g: 1, b: 1, a: 1}
+    _mask:
+      _layers:
+      - rid: 3136552048546031610
+  - _name: Forest Sand
+    _enabled: 1
+    _terrainTextureAsset: {fileID: 11400000, guid: 821ad323d9b3121439882398857cd870,
+      type: 2}
+    _colorTint: {r: 1, g: 1, b: 1, a: 1}
+    _mask:
+      _layers:
+      - rid: 3136552048546031611
+      - rid: 3136552048546031612
+  - _name: Grass
+    _enabled: 1
+    _terrainTextureAsset: {fileID: 11400000, guid: 45bbfdcf649147a4faf19c63227cc7de,
+      type: 2}
+    _colorTint: {r: 1, g: 1, b: 1, a: 1}
+    _mask:
+      _layers: []
+  _doHeightBlend: 1
+  _heightLayers:
+    _layers:
+    - rid: 3136552048546031613
+  _maxTerrainHeight: 25
+  _terrainHeightmapResolution: 513
+  _terrainSplatmapResolution: 512
+  _terrainBasemapBlend: 0.5
+  _terrainBasemapResolution: 512
+  references:
+    version: 2
+    RefIds:
+    - rid: 3136552048546031608
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 1
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552048546031614
+        _type: 0
+        _offset: {x: 0, y: 0}
+        _frequency: 19.07
+        _fractalData:
+          type: 2
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 3136552048546031609
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 7
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 3136552048546031615
+    - rid: 3136552048546031610
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552051658457088
+          - rid: 3136552051658457089
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 3136552051658457090
+    - rid: 3136552048546031611
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552051658457091
+          - rid: 3136552051658457092
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 3136552051658457093
+    - rid: 3136552048546031612
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 4
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552051658457094
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 36.8
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 3136552048546031613
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 3136552051658457095
+    - rid: 3136552048546031614
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.532
+        _inputMid: 0.5
+        _inputHigh: 0.742
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552048546031615
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 3136552051658457088
+      type: {class: SteepnessFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Steepness Filter
+        _enabled: 1
+    - rid: 3136552051658457089
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.357
+        _inputMid: 0.5
+        _inputHigh: 0.203
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552051658457090
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 3136552051658457091
+      type: {class: SteepnessFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Steepness Filter
+        _enabled: 1
+    - rid: 3136552051658457092
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.231
+        _inputMid: 0.5
+        _inputHigh: 0.8
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552051658457093
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 3136552051658457094
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.12
+        _inputMid: 0.5
+        _inputHigh: 0.637
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552051658457095
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+--- !u!114 &7090355796531951068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -945914773, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: TinyObjects
+  m_EditorClassIdentifier: 
+  _id: -1
+  _enabled: 1
+  _contentPool:
+    _enabled: 1
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 3dAssets
+      _loadAmount: 4
+      _resultType: 0
+      _queries:
+      - rid: 3136552051658457118
+      - rid: 3136552051658457119
+  _loadedContentIds:
+  - fd19e2cb-4644-445c-96bd-cecf4afc133d
+  - f5708331-1f6a-4f41-b296-c536c54c2ac9
+  - da1d4e14-80f1-4ad8-81d7-aefb37fd0539
+  - d721d48e-6f77-41d5-8f73-813d21704f11
+  _adjustedCost: 29
+  _costWeight: 0.016
+  _placeables:
+  - {fileID: 2155160832620583170, guid: f8829b4f3b93d484ea40b2889e7580e9, type: 3}
+  - {fileID: 1733474864322446, guid: 84807938c656ff0408ce44533ef173c1, type: 3}
+  - {fileID: 479440491346693109, guid: eae1a020ccaf8dd47baa43b754975d10, type: 3}
+  - {fileID: 1350273620642370, guid: a4b33faa5b09d234a951da963f98e07c, type: 3}
+  _generationType: 0
+  _densityLayers:
+    _layers:
+    - rid: 3136552051658457120
+    - rid: 3136552061236430256
+  _spacing: 0.5
+  _density: 0.4
+  _adjustedDensity: 0.043939393
+  _chaos: 1
+  _outputName: 
+  _GPUInstance: 1
+  _useTerrainDataAsHeightInput: 1
+  _heightmapLayers:
+    _layers: []
+  _terrainMaxHeight: 0
+  _offsetSpace: 1
+  _offset: {x: 0, y: 0, z: 0}
+  _orientationLayers:
+    _layers:
+    - rid: 3136552051658457121
+  _rotationXRange:
+    _min: 0
+    _max: 0
+  _rotationYRange:
+    _min: 0
+    _max: 360
+  _rotationZRange:
+    _min: 0
+    _max: 0
+  _scaleLayers:
+    _layers: []
+  _scaleRange:
+    _min: 0.75
+    _max: 1.25
+  _enableConformToTerrain: 0
+  _enableTerrainBlending: 1
+  _terrainBlendHeight: 0
+  _terrainBlend: 0.1
+  _drawDistance: 50
+  _shadowCastingMode: 1
+  _enableCollision: 0
+  _collisionMode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3136552051658457118
+      type: {class: FuzzyTagQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        _positiveTags:
+        - grass
+        - pebble
+        - dew
+        - leaves
+        - petals
+        - sparkle
+        _negativeTags: []
+        _minimumMatchingScore: 75
+    - rid: 3136552051658457119
+      type: {class: FootprintQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        x:
+          _min: 0
+          _max: 0
+        y:
+          _min: 0
+          _max: 1
+        z:
+          _min: 0
+          _max: 0
+        XZ:
+          _min: 0
+          _max: 5
+        YX:
+          _min: 0
+          _max: 0
+        YZ:
+          _min: 0
+          _max: 0
+    - rid: 3136552051658457120
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552051658457122
+          - rid: 3136552051658457123
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 3136552051658457124
+    - rid: 3136552051658457121
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters: []
+        _dataRegistry:
+          _registryName: HeightMap
+        _evaluator:
+          rid: 3136552051658457125
+    - rid: 3136552051658457122
+      type: {class: SteepnessFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Steepness Filter
+        _enabled: 1
+    - rid: 3136552051658457123
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.28
+        _inputMid: 0.5
+        _inputHigh: 0.4
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552051658457124
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 3136552051658457125
+      type: {class: LayerStackRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data: 
+    - rid: 3136552061236430256
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 4
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552061236430257
+        _dataRegistry:
+          _registryName: Object Mask
+        _evaluator:
+          rid: 3136552061236430258
+    - rid: 3136552061236430257
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.274
+        _inputMid: 0.5
+        _inputHigh: 0
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552061236430258
+      type: {class: ObjectRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data:
+        _radius: 10
+--- !u!114 &8989084841968849359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -945914773, guid: bb947c2285aa59945b0844a87cb38819, type: 3}
+  m_Name: MediumObjects
+  m_EditorClassIdentifier: 
+  _id: -1
+  _enabled: 1
+  _contentPool:
+    _enabled: 0
+    _contentMatcher:
+      _searchInProperty:
+        _propertyName: 3dAssets
+      _loadAmount: 6
+      _resultType: 0
+      _queries:
+      - rid: 3136552051658457106
+      - rid: 3136552051658457107
+  _loadedContentIds:
+  - fa0e2289-5a65-4dc4-a003-2f5def8ee94a
+  - f2a70c54-1b24-4b53-b1e3-d9cf9cd67966
+  - f268cbfe-2d79-4a13-aecc-751287a3be83
+  - e314d2b2-50fc-454b-accf-138a3ac5856a
+  - dad84fd9-20d2-4cda-bc3c-72de016c1b24
+  - d8e9f5dc-5602-41d7-be16-486348d9d000
+  _adjustedCost: 81
+  _costWeight: 0.047
+  _placeables:
+  - {fileID: 2657839520241978377, guid: 5613b6816db040998e4c6cc176eb0bf3, type: 3}
+  - {fileID: 360119973237568751, guid: 3125eaef45c649e4ae518a5ba4190d97, type: 3}
+  - {fileID: 7454594437492020760, guid: c904cbba7951468cae25dc8963d89a37, type: 3}
+  - {fileID: 6922764214971259787, guid: 5c7f4da085bc4353906e6304a0a97868, type: 3}
+  - {fileID: 3175338509563470514, guid: 5692bc56c4b7bed4c9a79882fbf7b433, type: 3}
+  - {fileID: 6582712802475611805, guid: 8431e0b2a7954b4a89a7fad71a9927d5, type: 3}
+  _generationType: 0
+  _densityLayers:
+    _layers:
+    - rid: 3136552051658457108
+    - rid: 3136552061236430248
+  _spacing: 5
+  _density: 0.6
+  _adjustedDensity: 0.6
+  _chaos: 1
+  _outputName: 
+  _GPUInstance: 1
+  _useTerrainDataAsHeightInput: 1
+  _heightmapLayers:
+    _layers: []
+  _terrainMaxHeight: 0
+  _offsetSpace: 1
+  _offset: {x: 0, y: 0, z: 0}
+  _orientationLayers:
+    _layers: []
+  _rotationXRange:
+    _min: 0
+    _max: 0
+  _rotationYRange:
+    _min: 0
+    _max: 360
+  _rotationZRange:
+    _min: 0
+    _max: 0
+  _scaleLayers:
+    _layers: []
+  _scaleRange:
+    _min: 0.75
+    _max: 1.5
+  _enableConformToTerrain: 1
+  _enableTerrainBlending: 1
+  _terrainBlendHeight: 0
+  _terrainBlend: 0.2
+  _drawDistance: 100
+  _shadowCastingMode: 1
+  _enableCollision: 1
+  _collisionMode: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3136552051658457106
+      type: {class: FuzzyTagQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        _positiveTags:
+        - bush
+        - flower
+        - mushroom
+        - vine
+        - gem
+        - crystal
+        _negativeTags: []
+        _minimumMatchingScore: 75
+    - rid: 3136552051658457107
+      type: {class: FootprintQuery, ns: Moonlander.Core, asm: Moonlander.Shapeshifter}
+      data:
+        _weight: 1
+        x:
+          _min: 0
+          _max: 0
+        y:
+          _min: 3
+          _max: 7
+        z:
+          _min: 0
+          _max: 0
+        XZ:
+          _min: 0
+          _max: 75
+        YX:
+          _min: 0
+          _max: 0
+        YZ:
+          _min: 0
+          _max: 0
+    - rid: 3136552051658457108
+      type: {class: NoiseLayer, ns: Moonlander.Core.Layers, asm: Moonlander.Shapeshifter}
+      data:
+        _name: NoiseLayer
+        _blendMode: 0
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552051658457109
+        _type: 1
+        _offset: {x: 0, y: 0}
+        _frequency: 20
+        _fractalData:
+          type: 1
+          octaves: 3
+          lacunarity: 2
+          gain: 0.5
+        _cellularData:
+          type: 0
+          returnType: 1
+          jitter: 1
+        _domainWarpData:
+          type: -1
+          amplitude: 1
+          frequency: 0.01
+          fractalType: 0
+          octaves: 3
+          lacunarity: 2
+    - rid: 3136552051658457109
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.412
+        _inputMid: 0.5
+        _inputHigh: 0.505
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552061236430248
+      type: {class: DataRegistryLayer, ns: Moonlander.Core.DataRegistrySystem, asm: Moonlander.Shapeshifter}
+      data:
+        _name: DataRegistryLayer
+        _blendMode: 4
+        _opacity: 1
+        _enabled: 1
+        _filters:
+          _filters:
+          - rid: 3136552061236430249
+        _dataRegistry:
+          _registryName: Object Mask
+        _evaluator:
+          rid: 3136552061236430250
+    - rid: 3136552061236430249
+      type: {class: LevelsFilter, ns: Moonlander.Core.Filters, asm: Moonlander.Shapeshifter}
+      data:
+        _name: Levels Filter
+        _enabled: 1
+        _inputLow: 0.274
+        _inputMid: 0.5
+        _inputHigh: 0
+        _outputLow: 0
+        _outputHigh: 1
+    - rid: 3136552061236430250
+      type: {class: ObjectRegistryLayerEvaluator, ns: Moonlander.Core.DataRegistrySystem,
+        asm: Moonlander.Shapeshifter}
+      data:
+        _radius: 10
